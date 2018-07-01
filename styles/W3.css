@@ -1,6 +1,13 @@
 <link rel="shortcut icon" href="NewLogo.png">
 
-.matchup-box
+.matchup-box {
+    border: 1px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 150px;
+    margin-left: 150px;
+    background-color: lightblue; 
+}
 
 .wrapper {
   width: 960px;
