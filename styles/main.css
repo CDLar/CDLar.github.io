@@ -1,9 +1,8 @@
 /* // My code// */
 
 .matchup-box {
-  max-width: 200px;
-  color: red;
-  background-color: coral;
+  max-width: 1300px;
+  background-color: #FFF;
   margin: 40px auto 0 auto;
   padding: 20px 50px;
     display: flex;
