@@ -1,12 +1,10 @@
 <link rel="shortcut icon" href="NewLogo.png">
 
 .matchup-box {
-    border: 1px solid black;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 150px;
-    margin-left: 150px;
-    background-color: lightblue; 
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  padding: 20px 50px;
+    display: flex;
 }
 
 .wrapper {
