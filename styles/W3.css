@@ -2,6 +2,7 @@
 
 .matchup-box {
   max-width: 200px;
+  color: blue;
   background-color: coral;
   margin: 40px auto 0 auto;
   padding: 20px 50px;
