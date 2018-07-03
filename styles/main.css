@@ -2,7 +2,7 @@
 
 .matchup-box {
   background-color: red;
-  margin: auto 0;
+  margin: auto 25;
   padding: 20px 50px;
     display: flex;
 }
