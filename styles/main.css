@@ -11,14 +11,27 @@
   display: inline-flex;
 }
 
-.matchup-box {
+.matchup-boxL {
   margin: auto 0;
   padding: 20px 2.4%;
   width:40%;
   display: inline-flex;
 }
 
-.matchup-box > p{
+.matchup-boxR {
+  margin: auto 0;
+  padding: 20px 2.4%;
+  width:40%;
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.matchup-boxL > p{
+  width:75px;
+  margin: 0;
+}
+
+.matchup-boxR > p{
   width:75px;
   margin: 0;
 }
