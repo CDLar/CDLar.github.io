@@ -23,6 +23,7 @@
   padding: 20px 2.4%;
   width:40%;
   display: inline-flex;
+  float:right;
 }
 
 .matchup-boxL > p{
