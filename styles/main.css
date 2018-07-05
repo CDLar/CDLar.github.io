@@ -1,19 +1,44 @@
 /* // My code// */
 
-.matchup-box {
-  background-color: red;
-  margin: auto 25;
-  padding: 20px 50px;
-    display: flex;
+.w3-top{
+  position:relative;
 }
 
-.wrapper {
+.matchups{
+  background-color: red;
+  position:absolute;
+  width:100%;
+  display: inline-flex;
+}
+
+.matchup-box {
+  margin: auto 0;
+  padding: 20px 2.4%;
+  width:40%;
+  display: inline-flex;
+}
+
+.matchup-box > p{
+  width:75px;
+  margin: 0;
+}
+
+.w3-round-xlarge{
+  height: 100%;
+  width: 90%;
+}
+
+.w3-light-grey{
+  width: 100%;
+}
+
+.wrapper{
   width: 960px;
   margin: 0 100 0 100;
 }
 
 
-.video-box {
+.video-box{
   width: 100%;
     background-color: #FFF;
 }
