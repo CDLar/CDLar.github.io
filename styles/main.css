@@ -6,7 +6,7 @@
 
 .matchups{
   background-color: red;
-  /*position:absolute;*/
+  position:absolute;
   width:100%;
   display: inline-flex;
 }
