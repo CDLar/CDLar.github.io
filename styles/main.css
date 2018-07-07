@@ -23,5 +23,5 @@
 .playoff-box{
   margin-top: 55px;
   max-height: 700px;
-  overflow: auto;
+  overflow: hidden;
 }
