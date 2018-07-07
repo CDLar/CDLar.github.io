@@ -29,20 +29,20 @@
 .playoffB{
   width:100%; 
   height:700px;
-  position:relative;
+  position: absolute;;
   z-index: 0;
 }
 
 .playoffW{
   width:100%; 
   height:700px;
-  position:relative;
+  position:absolute;
   z-index: 1;
 }
 
 .playoffL{
   width:100%; 
   height:700px;
-  position: relative;
+  position: absolute;
   z-index:-1;
 }
