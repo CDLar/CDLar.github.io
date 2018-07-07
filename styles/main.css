@@ -51,7 +51,7 @@
   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
   background: -o-linear-gradient(top, #65a9d7, #3e779d);
   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
-  padding: 10.5px 21px;
+  padding: 4.5px 9px;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   border-radius: 14px;
@@ -60,7 +60,7 @@
   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
   text-shadow: #7ea4bd 0 1px 0;
   color: #06426c;
-  font-size: 19px;
+  font-size: 16px;
   font-family: helvetica, serif;
   text-decoration: none;
   vertical-align: middle;
