@@ -26,3 +26,19 @@
   overflow: hidden;
   position:relative
 }
+
+.playoffW{
+  margin-top: 55px;
+  max-height: 700px;
+  overflow: hidden;
+  position:relative;
+  z-index: 1;
+}
+
+.playoffL{
+  margin-top: 55px;
+  max-height: 700px;
+  overflow: hidden;
+  position:relative;
+  z-index: -1;
+}
