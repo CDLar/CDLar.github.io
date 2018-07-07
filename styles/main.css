@@ -42,7 +42,7 @@
   z-index:-1;
 }
 
-.buttonC {
+.buttonP {
   border: 1px solid #0a3c59;
   background: #3e779d;
   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
@@ -65,7 +65,7 @@
   text-decoration: none;
   vertical-align: middle;
   }
-.buttonC:hover {
+.buttonP:hover {
   border: 1px solid #0a3c59;
   text-shadow: #1e4158 0 1px 0;
   background: #3e779d;
@@ -77,7 +77,7 @@
   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
   color: #fff;
   }
-.buttonC:active {
+.buttonP:active {
   text-shadow: #1e4158 0 1px 0;
   border: 1px solid #0a3c59;
   background: #65a9d7;
@@ -185,4 +185,3 @@
       background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
       color: #fff;
       }
-  
