@@ -1,13 +1,10 @@
 /*  //My code// */
 
-.w3-top{
-  position:relative;
-}
-
-.matchups{
+.matchup-box {
   background-color: red;
   margin: auto 25;
   padding: 20px 50px;
+<<<<<<< HEAD
   display: flex;
 }
 
@@ -43,6 +40,9 @@ w3-round-xlarge{
 
 .w3-light-grey{
   width: 100%;
+=======
+    display: flex;
+>>>>>>> parent of 7d120c2... 1
 }
 
 .video-box {
