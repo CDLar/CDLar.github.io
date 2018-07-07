@@ -17,7 +17,7 @@
   width: 100%;
   margin-top: 55px;
   margin-left:60px;
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
 .playoff-box{
@@ -26,18 +26,23 @@
   overflow: hidden;
 }
 
+.playoffB{
+  width:100%; 
+  height:700px;
+  position:relative;
+  z-index: 0;
+}
+
 .playoffW{
-  margin-top: 55px;
-  max-height: 700px;
-  overflow: hidden;
+  width:100%; 
+  height:700px;
   position:relative;
   z-index: 1;
 }
 
 .playoffL{
-  margin-top: 55px;
-  max-height: 700px;
-  overflow: hidden;
-  position:relative;
-  z-index: -1;
+  width:100%; 
+  height:700px
+  position: relative;
+  z-index:-1;
 }
