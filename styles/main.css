@@ -6,10 +6,10 @@
 
 .matchups{
   background-color: red;
-  position:absolute;
   width:100%;
   display: inline-flex;
   overflow: hidden;
+  margin-top: 55px;
 }
 
 .matchup-boxL {
