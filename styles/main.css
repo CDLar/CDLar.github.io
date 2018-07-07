@@ -1,0 +1,99 @@
+/* // My code// */
+
+.matchup-box {
+  background-color: red;
+  margin: auto 25;
+  padding: 20px 50px;
+    display: flex;
+}
+
+.video-box {
+  width: 100%;
+  margin-top: 55px;
+  margin-left:251px;
+  background-color: rgba(179, 171, 171, 0.623);
+  display: inline-block;
+}
+
+.playoff-box{
+  margin-top: 55px;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.playoffB{
+  width:100%; 
+  height:700px;
+  position: absolute;;
+  z-index: 0;
+}
+
+.playoffW{
+  width:100%; 
+  height:700px;
+  position:absolute;
+  z-index: 1;
+}
+
+.playoffL{
+  width:100%; 
+  height:700px;
+  position: absolute;
+  z-index:-1;
+}
+
+.buttonP {
+  border: 1px solid #0a3c59;
+  background: #3e779d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+  background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+  background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+  background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+  background: -o-linear-gradient(top, #65a9d7, #3e779d);
+  background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+  padding: 4.5px 9px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+  text-shadow: #7ea4bd 0 1px 0;
+  color: #06426c;
+  font-size: 16px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: absolute;
+  z-index:10;
+  }
+  
+.buttonP:hover {
+  border: 1px solid #0a3c59;
+  text-shadow: #1e4158 0 1px 0;
+  background: #3e779d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+  background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+  background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+  background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+  background: -o-linear-gradient(top, #65a9d7, #3e779d);
+  background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+  color: #fff;
+  position: absolute;
+  z-index:10;
+  }
+
+.buttonP:active {
+  text-shadow: #1e4158 0 1px 0;
+  border: 1px solid #0a3c59;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+  color: #fff;
+  position: absolute;
+  z-index:10;
+  }
