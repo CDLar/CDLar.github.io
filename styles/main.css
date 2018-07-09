@@ -4,6 +4,13 @@
   position:relative;
 }
 
+body.playoffs {
+  background-image:url("pics/p1.jpg");
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .matchups{
   background-color: red;
   margin: auto 25;
