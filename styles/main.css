@@ -54,10 +54,6 @@ w3-round-xlarge{
 }
 
 .playoff-box{
-  background-image:url("pics/p1.jpg");
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 55px;
   max-height: 100%;
   overflow: hidden;
