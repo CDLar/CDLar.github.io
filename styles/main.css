@@ -15,14 +15,14 @@
 .matchup-boxL {
   margin: auto 0;
   padding: 20px 2.4%;
-  width:40%;
+  width:50%;
   display: inline-flex;
 }
 
 .matchup-boxR {
   margin: auto 0;
   padding: 20px 2.4%;
-  width:40%;
+  width:50%;
   display: inline-flex;
   float:right;
 }
