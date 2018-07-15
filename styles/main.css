@@ -1,5 +1,12 @@
 /*  //My code// */
 
+.square{
+    height: 10vh;
+    width: 7vw;
+    background-color: #555;
+    padding: 1
+}
+
 .w3-top{
   position:relative;
 }
