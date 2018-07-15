@@ -16,6 +16,7 @@
   padding: 20px 2.4%;
   width:50%;
   display: inline-flex;
+  text-align: center;
 }
 
 .matchup-boxR {
@@ -24,6 +25,7 @@
   width:50%;
   display: inline-flex;
   float:right;
+  text-align: center;
 }
 
 .matchup-boxL > p{
