@@ -4,7 +4,8 @@
     height: 10vh;
     width: 7vw;
     background-color: #555;
-    padding: 1
+    padding: 1;
+    display: inline-flex;
 }
 
 .w3-top{
