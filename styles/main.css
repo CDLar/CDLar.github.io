@@ -4,6 +4,12 @@
   position:relative;
 }
 
+.matchupsM{
+  margin: auto 25;
+  padding: 20px 50px;
+  display: block;
+}
+
 .matchups{
   background-color: red;
   margin: auto 25;
