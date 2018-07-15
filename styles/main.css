@@ -8,7 +8,7 @@
   background-color: red;
   margin: auto 25;
   padding: 20px 50px;
-  display: block;
+  display: flex;
 }
 
 .matchup-boxL {
