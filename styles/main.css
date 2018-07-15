@@ -6,10 +6,9 @@
 
 .matchups{
   background-color: red;
-  position:absolute;
-  width:100%;
-  display: inline-flex;
-  overflow: hidden;
+  margin: auto 25;
+  padding: 20px 50px;
+  display: flex;
 }
 
 .matchup-boxL {
@@ -37,7 +36,7 @@
   margin: 0;
 }
 
-.w3-round-xlarge{
+w3-round-xlarge{
   height: 100%;
   width: 90%;
 }
