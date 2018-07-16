@@ -4,18 +4,11 @@
   position:relative;
 }
 
-<<<<<<< HEAD
-.matchupsM{
-  margin: auto 25;
-  padding: 20px 50px;
-  display: block;
-=======
 body.playoffs {
   background-image:url("p1.jpg");
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
->>>>>>> 3906197044c8a7bf37b9c0fc904148cbe05a3815
 }
 
 .matchups{
