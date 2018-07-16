@@ -11,8 +11,15 @@ body.playoffs {
   background-size: cover;
 }
 
-.matchups{
-  background-color: red;
+.matchupsA{
+  background-color:#eee
+  padding: 1.5em 4em;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.matchupsB{
+  background-color:#ddd;
   padding: 1.5em 4em;
   display: flex;
   flex-wrap: wrap
