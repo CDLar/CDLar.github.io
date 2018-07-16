@@ -15,7 +15,7 @@ body.playoffs {
   background-color: red;
   margin: auto 25;
   padding: 1.5em 4em;
-  display: flex;
+  display: block;
 }
 
 .matchup-boxL {
