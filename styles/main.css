@@ -46,9 +46,9 @@ body.playoffs {
   margin: 0;
 }
 
-w3-round-xlarge{
+.w3-round-xlarge{
   height: 100%;
-  width: 10em;
+  width:35%;
 }
 
 .video-box {
