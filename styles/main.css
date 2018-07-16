@@ -13,23 +13,20 @@ body.playoffs {
 
 .matchups{
   background-color: red;
-  margin: auto 25;
   padding: 1.5em 4em;
   display: flex;
   flex-wrap: wrap
 }
 
 .matchup-boxL {
-  margin: auto 0;
-  padding: 20px 2.4%;
+  padding: 1px 2.4%;
   width:35%;
   display: inline-flex;
   text-align: center;
 }
 
 .matchup-boxR {
-  margin: auto 0;
-  padding: 20px 2.4%;
+  padding: 1px 2.4%;
   width:35%;
   display: inline-flex;
   float:right;
