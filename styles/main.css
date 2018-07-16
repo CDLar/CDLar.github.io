@@ -19,14 +19,14 @@ body.playoffs {
 }
 
 .matchup-boxL {
-  padding: 3em 2.4%;
+  padding: 20px 2.4%;
   width:35%;
   display: inline-flex;
   text-align: center;
 }
 
 .matchup-boxR {
-  padding: 3em 2.4%;
+  padding: 20px 2.4%;
   width:35%;
   display: inline-flex;
   float:right;
