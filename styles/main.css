@@ -12,14 +12,14 @@ body.playoffs {
 }
 
 .matchupsA{
-  background-color:#eee;
+  background-color:rgba(151, 150, 150, 0.979);
   padding: 1.5em 4em;
   display: flex;
   flex-wrap: wrap
 }
 
 .matchupsB{
-  background-color:#ddd;
+  background-color:rgba(221, 221, 221, 0.281);
   padding: 1.5em 4em;
   display: flex;
   flex-wrap: wrap
