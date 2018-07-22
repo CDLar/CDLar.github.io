@@ -18,25 +18,31 @@ body.playoffs {
   background-size: cover;
 }
 
-.matchups{
-  background-color: red;
-  margin: auto 25;
+.matchupsA{
+  background-color:#777777;
   padding: 1.5em 4em;
   display: flex;
+  flex-wrap: wrap
+}
+
+.matchupsB{
+  background-color:#999999;
+  padding: 1.5em 4em;
+  display: flex;
+  flex-wrap: wrap
 }
 
 .matchup-boxL {
-  margin: auto 0;
-  padding: 20px 2.4%;
-  width:50%;
+  padding: 1.3em 2.5em 1.3em 0em;
+  width:35%;
   display: inline-flex;
   text-align: center;
 }
 
 .matchup-boxR {
-  margin: auto 0;
-  padding: 20px 2.4%;
-  width:50%;
+
+  padding: 1.3em 0em 1.3em 2.5em;
+  width:35%;
   display: inline-flex;
   float:right;
   text-align: center;
@@ -52,13 +58,9 @@ body.playoffs {
   margin: 0;
 }
 
-w3-round-xlarge{
+.w3-round-xlarge{
   height: 100%;
-  width: 90%;
-}
-
-.w3-light-grey{
-  width: 100%;
+  width:100%;
 }
 
 .video-box {
