@@ -74,6 +74,7 @@ w3-round-xlarge{
   max-height: 100%;
   overflow: hidden;
   display:block;
+  position:absolute;
 
 }
 
