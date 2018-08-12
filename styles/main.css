@@ -84,8 +84,8 @@ body.playoffs {
   margin-top: 55px;
   max-height: 100%;
   overflow: hidden;
-  display:inline-block;
-  position:absolute;
+  display:inline;
+  position:relative;
 
 }
 
