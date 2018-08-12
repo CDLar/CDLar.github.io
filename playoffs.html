@@ -33,7 +33,7 @@
     <button class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
     <button class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
 
-    <div id="Finals">
+    <div id="Finals" style="display:none">
         <!-- West Quarterfinals -->
       <div class="playoff-box" style="max-width:23em;"> 
       
@@ -164,8 +164,7 @@
         </div>
       </div>  
 
-
-  <div id="Henicup" style="display:none">
+<div id="Henicup" style="display:none">
 
    <!-- West Semis -->
 <div class="playoff-box"> 
@@ -226,6 +225,45 @@
         <th class="PT-P">P</th>
       </tr>
     </table>
+  </div>
+</div>
+
+<div id="Gauntlet">
+    <!-- Qualifying rounds -->
+  <div class="playoff-box"> 
+  
+    <table class="PT" style="margin-top:6em; margin-left:3em;">
+      <tr>
+        <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
+      </tr>
+    </table>
+  
+    <table class="PT" style="margin-top:2em; margin-left:3em;">
+      <tr>
+        <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
+      </tr>
+    </table>
+  
+    <table class="PT" style="margin-top:13em;margin-left:3em;">
+      <tr>
+        <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
+      </tr>
+    </table>
+  
+    <table class="PT" style="margin-top:2em; margin-left:3em;">
+      <tr>
+        <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
+      </tr>
+    </table>
+  </div>
   
 
 <!-- Function to switch playoff brackets-->
@@ -248,7 +286,7 @@
         var g = document.getElementById("Gaunlet");
   
         f.style.display = "none"; 
-        x.style.display = "block";
+        h.style.display = "block";
         g.style.display = "none";
     }
     </script>
@@ -260,7 +298,7 @@
         var g = document.getElementById("Gaunlet");
   
         f.style.display = "none"; 
-        x.style.display = "none";
+        h.style.display = "none";
         g.style.display = "block";
     }
     </script>
