@@ -80,6 +80,15 @@ body.playoffs {
 
 }
 
+.playoff-boxA{
+  margin-top: 55px;
+  max-height: 100%;
+  overflow: hidden;
+  display:inline-block;
+  position:absolute;
+
+}
+
 .playoffB{
   width:100%; 
   height:700px;
