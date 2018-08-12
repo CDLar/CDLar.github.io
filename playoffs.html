@@ -28,13 +28,142 @@
 <!-- Page content -->
 <body class="playoffs">
 
-<!-- Page content -->
-<body class="playoffs">
-
     <!-- Tree selector buttons -->
-    <button class="buttonP" onclick="treeSwitch()" style="top:93%; left:39.5%">Champion</button>
+    <button class="buttonP" onclick="treeSwitchF()" style="top:93%; left:39.5%">Champion</button>
     <button class="buttonP" style="top:93%; left:47.25%">Henicup</button>
     <button class="buttonP" style="top:93%; left:54%">Gauntlet</button> 
+
+    <div id="Finals">
+        <!-- West Quarterfinals -->
+      <div class="playoff-box" style="max-width:23em;"> 
+      
+        <table class="PT" style="margin-top:6em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      
+        <table class="PT" style="margin-top:2em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      
+        <table class="PT" style="margin-top:13em;margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      
+        <table class="PT" style="margin-top:2em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+      
+      <!-- West Semi-Finals -->
+      <div class="playoff-box">
+        <table class="PT" style="margin-top:8.50em; margin-left:23em;">
+            <tr>
+              <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
+            </tr>
+          </table>
+      
+          <table class="PT" style="margin-top:18.00em; margin-left:23em;">
+              <tr>
+                <th class="PT-P">P</th>
+                <th class="PT-N">NAME</th>
+                <th class="PT-S">S</th>
+              </tr>
+            </table>
+      </div>
+      
+      <!-- Finals Bracket -->
+      <div class="playoff-box">
+        <table class="PT" style="margin-top:14.500em; margin-left:43em;">
+            <tr>
+              <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
+            </tr>
+          </table>
+      
+          <table class="PT" style="margin-top:6.00em; margin-left:43em;border-color: black;">
+              <tr>
+                <th class="PT-S">S</th>
+                <th class="PT-N">NAME</th>
+                <th class="PT-P">P</th>
+              </tr>
+            </table>
+        </div>
+      
+        <!-- East Semi-Finals -->
+      <div class="playoff-box">
+          <table class="PT" style="margin-top:8.50em; margin-left:63em;">
+              <tr>
+                <th class="PT-S">S</th>
+                <th class="PT-N">NAME</th>
+                <th class="PT-P">P</th>
+              </tr>
+            </table>
+        
+            <table class="PT" style="margin-top:18.00em; margin-left:63em;">
+                <tr>
+                  <th class="PT-S">S</th>
+                  <th class="PT-N">NAME</th>
+                  <th class="PT-P">P</th>
+                </tr>
+              </table>
+      </div>
+      
+       <!-- East Quarterfinals -->
+       <div class="playoff-box"> 
+      
+          <table class="PT" style="margin-top:6em; margin-left:83em;">
+            <tr>
+              <th class="PT-S">S</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-P">P</th>
+            </tr>
+          </table>
+        
+          <table class="PT" style="margin-top:2em; margin-left:83em;">
+            <tr>
+              <th class="PT-S">S</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-P">P</th>
+            </tr>
+          </table>
+        
+          <table class="PT" style="margin-top:13em;margin-left:83em;">
+            <tr>
+              <th class="PT-S">S</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-P">P</th>
+            </tr>
+          </table>
+        
+          <table class="PT" style="margin-top:2em; margin-left:83em;">
+            <tr>
+              <th class="PT-S">S</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-P">P</th>
+            </tr>
+          </table>
+        </div>
+      </div>  
+
 
   <div id="Henicup" style="display:none">
 
@@ -101,7 +230,7 @@
 
 <!-- Function to switch playoff brackets-->
 <script>
-  function treeSwitch() {
+  function treeSwitchF() {
       var x = document.getElementById("Finals");
       if (x.style.display === "none") {
           x.style.display = "block";
@@ -112,7 +241,7 @@
   </script>
 
 <script>
-    function treeSwitch() {
+    function treeSwitchH() {
         var x = document.getElementById("Henicup");
         if (x.style.display === "none") {
             x.style.display = "block";
@@ -123,7 +252,7 @@
     </script>
 
 <script>
-    function treeSwitch() {
+    function treeSwitchG() {
         var x = document.getElementById("Gauntlet");
         if (x.style.display === "none") {
             x.style.display = "block";
