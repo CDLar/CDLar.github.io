@@ -30,8 +30,8 @@
 
     <!-- Tree selector buttons -->
     <button class="buttonP" onclick="treeSwitchF()" style="top:93%; left:39.5%">Champion</button>
-    <button class="buttonP" style="top:93%; left:47.25%">Henicup</button>
-    <button class="buttonP" style="top:93%; left:54%">Gauntlet</button> 
+    <button class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
+    <button class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
 
     <div id="Finals">
         <!-- West Quarterfinals -->
@@ -231,34 +231,37 @@
 <!-- Function to switch playoff brackets-->
 <script>
   function treeSwitchF() {
-      var x = document.getElementById("Finals");
-      if (x.style.display === "none") {
-          x.style.display = "block";
-      } else {
-          x.style.display = "none";
-      }
+      var f = document.getElementById("Finals");
+      var h = document.getElementById("Henicup");
+      var g = document.getElementById("Gaunlet");
+
+      f.style.display = "block"; 
+      h.style.display = "none";
+      g.style.display = "none";
   }
   </script>
 
 <script>
     function treeSwitchH() {
-        var x = document.getElementById("Henicup");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
+        var f = document.getElementById("Finals");
+        var h = document.getElementById("Henicup");
+        var g = document.getElementById("Gaunlet");
+  
+        f.style.display = "none"; 
+        x.style.display = "block";
+        g.style.display = "none";
     }
     </script>
 
 <script>
     function treeSwitchG() {
-        var x = document.getElementById("Gauntlet");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
+        var f = document.getElementById("Finals");
+        var h = document.getElementById("Henicup");
+        var g = document.getElementById("Gaunlet");
+  
+        f.style.display = "none"; 
+        x.style.display = "none";
+        g.style.display = "block";
     }
     </script>
 
