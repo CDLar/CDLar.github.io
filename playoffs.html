@@ -36,7 +36,7 @@
     <button class="buttonP" style="top:93%; left:47.25%">Henicup</button>
     <button class="buttonP" style="top:93%; left:54%">Gauntlet</button> 
 
-  <div id="Henicup">
+  <div id="Henicup" style="display:none">
 
    <!-- West Semis -->
 <div class="playoff-box" style="max-width:23em;"> 
@@ -110,6 +110,28 @@
       }
   }
   </script>
+
+<script>
+    function treeSwitch() {
+        var x = document.getElementById("Henicup");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+
+<script>
+    function treeSwitch() {
+        var x = document.getElementById("Gauntlet");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
 
 </body>
 </html>
