@@ -228,7 +228,8 @@
 </div>
 
 <div id="Gauntlet" style="display:none">
-    <!-- Qualifying rounds -->
+
+  <!-- Qualifying rounds -->
   <div class="playoff-box"> 
   
     <table class="PT" style="margin-top:6em; margin-left:3em;">
@@ -266,7 +267,6 @@
 
 <!-- Wildcard Advancement-->
 <div class="playoff-box"> 
-
       <table class="PT" style="margin-top:9.5em; margin-left:30em;">
         <tr>
           <th class="PT-P">P</th>
@@ -274,7 +274,7 @@
           <th class="PT-S">S</th>
         </tr>
       </table>
-    
+
       <table class="PT" style="margin-top:18em; margin-left:30em;">
         <tr>
           <th class="PT-P">P</th>
@@ -282,8 +282,18 @@
           <th class="PT-S">S</th>
         </tr>
       </table>
-  
   </div>
+</div>
+
+<!-- Advancement Text -->
+<div class="playoff-box"> 
+
+    <div style="margin-top:9.5em; margin-left:60em;">
+      <p>Advance as Wildcard 1 (WC1) ➠ </p>
+    </div>
+    <div style="margin-top:18em; margin-left:60em;">
+        <p>Advance as Wildcard 1 (WC2) ➠ </p>
+    </div> 
 </div>
 
 <!-- Function to switch playoff brackets-->
@@ -291,7 +301,7 @@
   function treeSwitchF() {
       var f = document.getElementById("Finals");
       var h = document.getElementById("Henicup");
-      var g = document.getElementById("Gaunlet");
+      var g = document.getElementById("Gauntlet");
 
       f.style.display = "block"; 
       h.style.display = "none";
@@ -303,7 +313,7 @@
     function treeSwitchH() {
         var f = document.getElementById("Finals");
         var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gaunlet");
+        var g = document.getElementById("Gauntlet");
   
         f.style.display = "none"; 
         h.style.display = "block";
@@ -315,7 +325,7 @@
     function treeSwitchG() {
         var f = document.getElementById("Finals");
         var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gaunlet");
+        var g = document.getElementById("Gauntlet");
   
         f.style.display = "none"; 
         h.style.display = "none";
