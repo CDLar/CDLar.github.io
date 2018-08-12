@@ -29,10 +29,10 @@
 <body class="playoffs">
 
   <!-- Tree selector buttons -->
-  <button class="buttonP" style="top:93%; left:39.5%">Champion</button>
+  <button class="buttonP" onclick="treeSwitch()" style="top:93%; left:39.5%">Champion</button>
   <button class="buttonP" style="top:93%; left:47.25%">Henicup</button>
   <button class="buttonP" style="top:93%; left:54%">Gauntlet</button> 
-<div id="Playoffs"  
+<div id="Finals">
   <!-- West Quarterfinals -->
 <div class="playoff-box" style="max-width:23em;"> 
 
@@ -162,5 +162,18 @@
     </table>
   </div>
 </div>  
+
+<!-- Function to switch playoff brackets-->
+<script>
+  function treeSwitch() {
+      var x = document.getElementById("Finals");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+  </script>
+
 </body>
 </html>
