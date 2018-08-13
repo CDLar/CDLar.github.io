@@ -73,7 +73,7 @@ body.playoffs {
   display: inline-block;
 }
 
-@media (min-width: 1289px){
+@media (min-width: 1287px){
   .playoff-box{
   margin-top: 3.44em;
   max-height: 100%;
