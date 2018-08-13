@@ -12,10 +12,10 @@
 .PT .PT-S{font-family:Impact, Charcoal, sans-serif !important;;background-color:#c0c0c0;border-color:#ffffff;color:#333333;vertical-align:top;width:4em;}
 
 body.playoffs {
-  background-image:url("p1.jpg");
+  /*background-image:url("p1.jpg");
   background-attachment:fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   width:100%;
 }
 
