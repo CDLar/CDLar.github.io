@@ -78,7 +78,7 @@ body.playoffs {
   max-height: 100%;
   overflow: hidden;
   display:block;
-  position:relative;
+  position:absolute;
 
 }
 
