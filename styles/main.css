@@ -73,15 +73,12 @@ body.playoffs {
   display: inline-block;
 }
 
-@media (min-width: 1280px){
-  .playoff-box{
+.playoff-box{
   margin-top: 3.44em;
   max-height: 100%;
   overflow: hidden;
   display:block;
   position:absolute;
-  }
-}
 
 .playoffB{
   width:100%; 
