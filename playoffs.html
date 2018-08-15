@@ -28,9 +28,9 @@
 <body class="playoffs">
 
     <!-- Tree selector buttons -->
-    <button class="buttonP" onclick="treeSwitchF()" style="top:93%; left:39.5%">Champion</button>
-    <button class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
-    <button class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
+    <button id="FinalB" class="buttonP" onclick="treeSwitchF()" style="top:93%; left:39.5%">Champion</button>
+    <button id="HenicupB" class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
+    <button id="GauntletB" class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
 
     <div id="Finals">
         <!-- West Quarterfinals -->
@@ -301,10 +301,16 @@
       var f = document.getElementById("Finals");
       var h = document.getElementById("Henicup");
       var g = document.getElementById("Gauntlet");
+      var fb = document.getElementByID("FinalB");
+      var hb = document.getElementByID("HenicupB");
+      var gb = document.getElementByID("GauntletB");
 
       f.style.display = "block"; 
       h.style.display = "none";
       g.style.display = "none";
+      fb.style.color = "#fff";
+      fb.style.color = "#06426c";
+      fb.style.color = "#06426c";
   }
   </script>
 
@@ -313,10 +319,16 @@
         var f = document.getElementById("Finals");
         var h = document.getElementById("Henicup");
         var g = document.getElementById("Gauntlet");
+        var fb = document.getElementByID("FinalB");
+        var hb = document.getElementByID("HenicupB");
+        var gb = document.getElementByID("GauntletB");
   
         f.style.display = "none"; 
         h.style.display = "block";
         g.style.display = "none";
+        fb.style.color = "#06426c";
+        fb.style.color = "#fff";
+        fb.style.color = "#06426c";
     }
     </script>
 
@@ -325,10 +337,16 @@
         var f = document.getElementById("Finals");
         var h = document.getElementById("Henicup");
         var g = document.getElementById("Gauntlet");
+        var fb = document.getElementByID("FinalB");
+        var hb = document.getElementByID("HenicupB");
+        var gb = document.getElementByID("GauntletB");
   
         f.style.display = "none"; 
         h.style.display = "none";
         g.style.display = "block";
+        fb.style.color = "#06426c";
+        fb.style.color = "#06462c";
+        fb.style.color = "#fff";
     }
 </script>
 <!--BootStrap-->
