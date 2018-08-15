@@ -298,55 +298,34 @@
 <!-- Function to switch playoff brackets-->
 <script>
   function treeSwitchF() {
-      var f = document.getElementById("Finals");
-      var h = document.getElementById("Henicup");
-      var g = document.getElementById("Gauntlet");
-      var fb = document.getElementByID("FinalB");
-      var hb = document.getElementByID("HenicupB");
-      var gb = document.getElementByID("GauntletB");
-
-      f.style.display = "block"; 
-      h.style.display = "none";
-      g.style.display = "none";
-      fb.style.color = "#fff";
-      hb.style.color = "#06426c";
-      gb.style.color = "#06426c";
+      var f = document.getElementById("Finals").style.display = "block";
+      var h = document.getElementById("Henicup").style.display = "none";
+      var g = document.getElementById("Gauntlet").style.display = "none";
+      var fb = document.getElementByID("FinalB").style.color = "#fff";
+      var hb = document.getElementByID("HenicupB").style.color = "#06426c";
+      var gb = document.getElementByID("GauntletB").style.color = "#06426c";
   }
   </script>
 
 <script>
     function treeSwitchH() {
-        var f = document.getElementById("Finals");
-        var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gauntlet");
-        /*var fb = document.getElementByID("FinalB");
-        var hb = document.getElementByID("HenicupB");
-        var gb = document.getElementByID("GauntletB");*/
-  
-        f.style.display = "none"; 
-        h.style.display = "block";
-        g.style.display = "none";
-        /*fb.style.color = "#06426c";
-        hb.style.color = "#fff";
-        gb.style.color = "#06426c";*/
+      var f = document.getElementById("Finals").style.display = "none";
+      var h = document.getElementById("Henicup").style.display = "block";
+      var g = document.getElementById("Gauntlet").style.display = "none";
+      var fb = document.getElementByID("FinalB").style.color = "#06426c";
+      var hb = document.getElementByID("HenicupB").style.color = "#FFF";
+      var gb = document.getElementByID("GauntletB").style.color = "#06426c";
     }
     </script>
 
 <script>
     function treeSwitchG() {
-        var f = document.getElementById("Finals");
-        var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gauntlet");
-        var fb = document.getElementByID("FinalB");
-        var hb = document.getElementByID("HenicupB");
-        var gb = document.getElementByID("GauntletB");
-  
-        f.style.display = "none"; 
-        h.style.display = "none";
-        g.style.display = "block";
-        fb.style.color = "#06426c";
-        hb.style.color = "#06462c";
-        gb.style.color = "#fff";
+      var f = document.getElementById("Finals").style.display = "none";
+      var h = document.getElementById("Henicup").style.display = "none";
+      var g = document.getElementById("Gauntlet").style.display = "block";
+      var fb = document.getElementByID("FinalB").style.color = "#06426c";
+      var hb = document.getElementByID("HenicupB").style.color = "#06426c";
+      var gb = document.getElementByID("GauntletB").style.color = "#FFF";
     }
 </script>
 <!--BootStrap-->
