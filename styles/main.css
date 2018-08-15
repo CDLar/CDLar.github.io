@@ -154,3 +154,7 @@ body.playoffs {
   color: #fff;
   position: absolute;
   }
+
+  .buttonP:focus {
+    color: #fff;
+  }
