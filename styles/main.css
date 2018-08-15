@@ -153,8 +153,10 @@ body.playoffs {
   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
   color: #fff;
   position: absolute;
+  outline: none;
   }
 
   .buttonP:focus {
     color: #fff;
+    outline: none;
   }
