@@ -28,15 +28,15 @@
 <body class="playoffs">
 
     <!-- Tree selector buttons -->
-    <button class="buttonP" onclick="treeSwitchF()" style="top:93%; left:39.5%">Champion</button>
-    <button class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
-    <button class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
+    <button id="FinalB" class="buttonP" onclick="treeSwitchF()" autofocus style="top:93%; left:39.5%">Champion</button>
+    <button id="HenicupB" class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
+    <button id="GauntletB" class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button> 
 
     <div id="Finals">
         <!-- West Quarterfinals -->
       <div class="playoff-box" style="max-width:23em;"> 
-      
-        <table class="PT" style="margin-top:6em; margin-left:3em;">
+      <p class="divH" style="margin-left:4.5em">West Quarter</p>
+        <table class="PT" style="margin-top:6em; margin-left:2em;">
           <tr>
             <th class="PT-P">P</th>
             <th class="PT-N">NAME</th>
@@ -44,7 +44,7 @@
           </tr>
         </table>
       
-        <table class="PT" style="margin-top:2em; margin-left:3em;">
+        <table class="PT" style="margin-top:2em; margin-left:2em;">
           <tr>
             <th class="PT-P">P</th>
             <th class="PT-N">NAME</th>
@@ -52,7 +52,7 @@
           </tr>
         </table>
       
-        <table class="PT" style="margin-top:13em;margin-left:3em;">
+        <table class="PT" style="margin-top:13em;margin-left:2em;">
           <tr>
             <th class="PT-P">P</th>
             <th class="PT-N">NAME</th>
@@ -60,7 +60,7 @@
           </tr>
         </table>
       
-        <table class="PT" style="margin-top:2em; margin-left:3em;">
+        <table class="PT" style="margin-top:2em; margin-left:2em;">
           <tr>
             <th class="PT-P">P</th>
             <th class="PT-N">NAME</th>
@@ -100,9 +100,9 @@
       
           <table class="PT" style="margin-top:6.00em; margin-left:43em;">
               <tr>
-                <th class="PT-S">S</th>
-                <th class="PT-N">NAME</th>
                 <th class="PT-P">P</th>
+                <th class="PT-N">NAME</th>
+                <th class="PT-S">S</th>
               </tr>
             </table>
         </div>
@@ -111,17 +111,17 @@
       <div class="playoff-box">
           <table class="PT" style="margin-top:8.50em; margin-left:63em;">
               <tr>
-                <th class="PT-S">S</th>
-                <th class="PT-N">NAME</th>
                 <th class="PT-P">P</th>
+                <th class="PT-N">NAME</th>
+                <th class="PT-S">S</th>
               </tr>
             </table>
         
             <table class="PT" style="margin-top:18.00em; margin-left:63em;">
                 <tr>
-                  <th class="PT-S">S</th>
-                  <th class="PT-N">NAME</th>
                   <th class="PT-P">P</th>
+                  <th class="PT-N">NAME</th>
+                  <th class="PT-S">S</th>
                 </tr>
               </table>
       </div>
@@ -131,33 +131,33 @@
       
           <table class="PT" style="margin-top:6em; margin-left:83em;">
             <tr>
-              <th class="PT-S">S</th>
-              <th class="PT-N">NAME</th>
               <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
             </tr>
           </table>
         
           <table class="PT" style="margin-top:2em; margin-left:83em;">
             <tr>
-              <th class="PT-S">S</th>
-              <th class="PT-N">NAME</th>
               <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
             </tr>
           </table>
         
           <table class="PT" style="margin-top:13em;margin-left:83em;">
             <tr>
-              <th class="PT-S">S</th>
-              <th class="PT-N">NAME</th>
               <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
             </tr>
           </table>
         
           <table class="PT" style="margin-top:2em; margin-left:83em;">
             <tr>
-              <th class="PT-S">S</th>
-              <th class="PT-N">NAME</th>
               <th class="PT-P">P</th>
+              <th class="PT-N">NAME</th>
+              <th class="PT-S">S</th>
             </tr>
           </table>
         </div>
@@ -187,7 +187,7 @@
 
   <!-- Finals Bracket -->
 <div class="playoff-box">
-    <table class="PT" style="margin-top:17.500em; margin-left:32.5em;">
+    <table class="PT" style="margin-top:17.500em; margin-left:32em;">
         <tr>
           <th class="PT-P">P</th>
           <th class="PT-N">NAME</th>
@@ -196,11 +196,11 @@
       </table>
 </div>
 <div class="playoff-box">
-      <table class="PT" style="margin-top:17.5em; margin-left:52.5em;border-color: black;">
+      <table class="PT" style="margin-top:17.5em; margin-left:52em;border-color: black;">
           <tr>
-            <th class="PT-S">S</th>
-            <th class="PT-N">NAME</th>
             <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
           </tr>
         </table>
 </div>
@@ -208,19 +208,19 @@
    <!-- East Semis -->
 <div class="playoff-box"> 
 
-    <table class="PT" style="margin-top:6em; margin-left:83em;">
+    <table class="PT" style="margin-top:6em; margin-left:81em;">
       <tr>
-        <th class="PT-S">S</th>
-        <th class="PT-N">NAME</th>
         <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
       </tr>
     </table>
   
-    <table class="PT" style="margin-top:22.5em; margin-left:83em;">
+    <table class="PT" style="margin-top:22.5em; margin-left:81em;">
       <tr>
-        <th class="PT-S">S</th>
-        <th class="PT-N">NAME</th>
         <th class="PT-P">P</th>
+        <th class="PT-N">NAME</th>
+        <th class="PT-S">S</th>
       </tr>
     </table>
   </div>
@@ -298,37 +298,34 @@
 <!-- Function to switch playoff brackets-->
 <script>
   function treeSwitchF() {
-      var f = document.getElementById("Finals");
-      var h = document.getElementById("Henicup");
-      var g = document.getElementById("Gauntlet");
-
-      f.style.display = "block"; 
-      h.style.display = "none";
-      g.style.display = "none";
+      document.getElementById("Finals").style.display = "block";
+      document.getElementById("Henicup").style.display = "none";
+      document.getElementById("Gauntlet").style.display = "none";
+      document.getElementByID("FinalB").style.color = "#fff";
+      document.getElementByID("HenicupB").style.color = "#06426c";
+      document.getElementByID("GauntletB").style.color = "#06426c";
   }
   </script>
 
 <script>
     function treeSwitchH() {
-        var f = document.getElementById("Finals");
-        var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gauntlet");
-  
-        f.style.display = "none"; 
-        h.style.display = "block";
-        g.style.display = "none";
+      document.getElementById("Finals").style.display = "none";
+      document.getElementById("Henicup").style.display = "block";
+      document.getElementById("Gauntlet").style.display = "none";
+      document.getElementByID("FinalB").style.color = "#06426c";
+      document.getElementByID("HenicupB").style.color = "white";
+      document.getElementByID("GauntletB").style.color = "#06426c";
     }
     </script>
 
 <script>
     function treeSwitchG() {
-        var f = document.getElementById("Finals");
-        var h = document.getElementById("Henicup");
-        var g = document.getElementById("Gauntlet");
-  
-        f.style.display = "none"; 
-        h.style.display = "none";
-        g.style.display = "block";
+      document.getElementById("Finals").style.display = "none";
+      document.getElementById("Henicup").style.display = "none";
+      document.getElementById("Gauntlet").style.display = "block";
+      document.getElementByID("FinalB").style.color = "#06426c";
+      document.getElementByID("HenicupB").style.color = "#06426c";
+      document.getElementByID("GauntletB").style.color = "white";
     }
 </script>
 <!--BootStrap-->
