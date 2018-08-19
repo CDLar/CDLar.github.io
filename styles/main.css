@@ -1,8 +1,16 @@
 /*  //My code// */
 
-.headers{
-font-family:Impact, Charcoal, sans-serif	
+.DivH{
+font-family:Impact, Charcoal, sans-serif
+margin-top:3em;
+color:blue; 
 }
+
+.DivD{
+  font-family:Impact, Charcoal, sans-serif
+  margin-top:3em; margin-left:2em;">
+  
+  }
 
 .w3-top{
   position:relative;
