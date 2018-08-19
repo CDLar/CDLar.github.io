@@ -1,16 +1,18 @@
 /*  //My code// */
 
 .divH{
-font-family:Impact, Charcoal, sans-;
-color:aquamarine;
-position:absolute;
-font-size:1.5em;
+  font-family:Impact, Charcoal, sans-;
+  font-family:Verdana,sans-serif;
+  font-weight:bold;font-variant:small-caps;
+  letter-spacing:0.2em;
+  color:#1C3143;
+  position:absolute;
+  font-size:1.5em;
 }
 
 .divD{
   font-family:Impact, Charcoal, sans-serif;
-  margin-top:3em;
-  
+  margin-top: 3em;
   }
 
 .w3-top{
