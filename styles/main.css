@@ -25,9 +25,9 @@
 
 .PT  {border-collapse:collapse;border-spacing:0;height:3em;}
 .PT td{font-family:Arial, sans-serif;font-size:1em;padding:0.625x 0.313em;border-style:solid;border-width:0.063em;overflow:hidden;word-break:normal;border-color:black;}
-.PT th{font-family:Arial, sans-serif;font-size:1em;font-weight:normal;padding:0.625 0.313em;border-style:solid;border-width:0.063em;overflow:hidden;word-break:normal;border-color:black;}
+.PT th{font-family:Arial, sans-serif;font-size:1em;font-weight:normal;padding:0.625 0.313em;border-style:solid;border-width:0.1em;overflow:hidden;word-break:normal;border-color:black;}
 .PT .PT-P{background-color:#656565;color:#ffffff;border-color:#ffffff;text-align: center;width:2em;}
-.PT .PT-N{background-color:#ffffff;text-align:center;border-color:#ffffff;text-align: center;width:12em;}
+.PT .PT-N{background-color:#ffffff;text-align:center;border-color:#ffffff;text-align:center;width:12em;}
 .PT .PT-S{font-family:Impact, Charcoal, sans-serif !important;;background-color:#c0c0c0;border-color:#ffffff;color:#333333;width:4em;text-align:center;}
 
 body.playoffs {
