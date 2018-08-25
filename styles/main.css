@@ -1,5 +1,19 @@
 /*  //My code// */
 
+.hLine{
+  background-color:white;
+  height:0.15em;
+  position:absolute;
+  z-index:1000000;
+}
+
+.vLine{
+  background-color:white;
+  width:0.15em;
+  position:absolute;
+  z-index:1000000;
+}
+
 .divH{
   font-family:Verdana,sans-serif;
   font-weight:bold;font-variant:small-caps;
