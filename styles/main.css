@@ -2,14 +2,14 @@
 
 .hLine{
   background-color:white;
-  height:0.15em;
+  height:0.13em;
   position:absolute;
   z-index:1000000;
 }
 
 .vLine{
   background-color:white;
-  width:0.15em;
+  width:0.13em;
   position:absolute;
   z-index:1000000;
 }
