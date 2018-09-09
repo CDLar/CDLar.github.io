@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/W3.css">
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
 <link rel="icon"        type="image/png"        href="NewLogo.png">
 
 
@@ -28,7 +30,33 @@
   </div>
 </header>
 
+<head>
+  <style>
+
+  article {
+  display: grid;
+  grid-template-columns: 1fr 5em [start] 12.5em 50em 12.5em [end] 5em 1fr;
+  height: 100vh;
+
+  padding: 3em 0;
+  } 
+
+  article * { grid-column: start / end; }
+
+  @media (max-width: 75em) {
+    article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
+  }
+
+  </style>
+</head>
+
 <!-- Page content -->
 <body>
+  <article id="2018-pick-order">
+    <h1>Official Draft Order 2018 - 2019</h1>
+
+    <time datetime="29/8/2018">Sept. 29, 2018</time>
+    <p class="blog">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </article>
 </body>
 </html>
