@@ -45,7 +45,8 @@
 .PT .PT-S{font-family:Impact, Charcoal, sans-serif !important;;background-color:#c0c0c0;border-color:#ffffff;color:#333333;width:4em;text-align:center;}
 
 body.playoffs {
-  background-image:url("p1.jpg");
+  /*background-image:url("p1.jpg");*/
+  background-image:url("https://i.pinimg.com/originals/6a/96/8e/6a968e01e0beb47fb629d464b1f04399.jpg");
   background-attachment:fixed;
   background-repeat: no-repeat;
   background-size: cover;
