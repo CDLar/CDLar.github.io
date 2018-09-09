@@ -1,4 +1,6 @@
-:root { font: 20px/1.2 "Roboto", sans-serif; }
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root { font: 16px/1.2 "Roboto", sans-serif; }
 
 body,
 body * {
