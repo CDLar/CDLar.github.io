@@ -24,7 +24,7 @@
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:30000px;" id="home">
+<header class="w3-display-container w3-content w3-wide" style="max-width:100%" id="home">
   &emsp;
    <img class="w3-image" src="https://i.imgur.com/sYuhP5X.jpg" alt="Broken3"> 
   </div>
@@ -33,19 +33,18 @@
 <head>
   <style>
 
-  article {
-  display: grid;
-  grid-template-columns: 1fr 5em [start] 12.5em 50em 12.5em [end] 5em 1fr;
-  height: 100vh;
+article {
+	display: grid;
+	grid-template-columns: 1fr 10% [start] 10% 60% 10% [end] 10% 1fr;
 
-  padding: 3em 0;
-  } 
+	padding: 0.5in 0;
+}
 
   article * { grid-column: start / end; }
 
-  @media (max-width: 75em) {
-    article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
-  }
+@media (max-width: 12in) {
+	article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
+}
 
   </style>
 </head>

@@ -4,15 +4,6 @@
 	justify-content: center;
 	align-items:     center;
 }
-
-.article {
-  display: grid;
-  grid-template-columns: 1fr minmax(0,8.5in) 1fr;
-  height: 100vh;
-  background-color:red;
-}
-
-article * { grid-column: 2/3;}
 .hLine{
   background-color:white;
   height:0.15em;
