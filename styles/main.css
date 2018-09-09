@@ -57,6 +57,24 @@ body.playoffs {
   font-size:100.01%;
 }
 
+body.rules {
+  background-image:url("https://stmed.net/sites/default/files/hockey-wallpapers-31110-9377139.jpg");
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  font-size:100.01%;
+}
+
+body.hall {
+  background-image:url("https://pixelz.cc/wp-content/uploads/2018/06/stanley-cup-uhd-4k-wallpaper.jpg");
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  font-size:100.01%;
+}
+
 .matchupsA{
   background-color:#777777;
   padding: 1.5em 4em;
