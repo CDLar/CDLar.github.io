@@ -1,5 +1,9 @@
 /*  //My code// */
-
+.blog {
+	display:         flex;
+	justify-content: center;
+	align-items:     center;
+}
 .hLine{
   background-color:white;
   height:0.13em;
