@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
 </head>
 
-<header>
+<nav>
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -19,61 +19,62 @@
         <b>BCFHL</b> Basecamp Fantasy Hockey League</a>
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="index.html" class="w3-bar-item w3-button" style="font-size:1rem">Home</a>
-        <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1rem">Rules</a>
-        <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1rem">Hall of Fame</a>
-        <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1rem">Podcast</a>
-        <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1rem">Match-ups</a>
-        <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1rem">Play-offs</a>
+        <a href="index.html" class="w3-bar-item w3-button" style="font-size:1em">Home</a>
+        <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1em">Rules</a>
+        <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1em">Hall of Fame</a>
+        <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1em">Podcast</a>
+        <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1em">Match-ups</a>
+        <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1em">Play-offs</a>
       </div>
     </div>
   </div>
+</nav>
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;margin-top:55px" id="mySidebar">
-    <div class="w3-container w3-display-container w3-padding-16">
-      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <img>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;margin-top:55px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      2018
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testa</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testb</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testc</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testd</a>
     </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        2018
-        <i class="fa fa-caret-down"></i>
-      </a>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testa</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testb</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testc</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testd</a>
-      </div>
-    </div>
+  </div>
 
-    <div class="w3-container w3-display-container w3-padding-16">
-      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <img>
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      2017
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>teste</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testf</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testg</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">
+        <i class="fa fa-caret-right w3-margin-right"></i>testh</a>
     </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        2017
-        <i class="fa fa-caret-down"></i>
-      </a>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>teste</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testf</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testg</a>
-        <a href="#" class="w3-bar-item w3-button w3-light-grey">
-          <i class="fa fa-caret-right w3-margin-right"></i>testh</a>
-      </div>
-    </div>
+  </div>
 
-  </nav>
+</nav>
 </header>
 <!-- Page content -->
 
