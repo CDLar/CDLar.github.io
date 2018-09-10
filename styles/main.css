@@ -12,7 +12,7 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
 }
 
 .bArticle:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\25B6'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: grey;
   float: right;
@@ -21,7 +21,7 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\25BC"; /* Unicode character for "minus" sign (-) */
 }
 
 .content {
