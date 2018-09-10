@@ -31,7 +31,7 @@
     h2,
     time,
     p:not(:last-child) {
-      margin-bottom: 2.4rem;
+      margin-bottom: 2rem;
     }
 
     h1 {
@@ -101,12 +101,26 @@
 
   </header>
 
-  <article id="2018-pick-order">
-    <h1>Official Draft Order 2018 - 2019</h1>
-    <h2>League Announcement</h2>
+  <article id="2018-draft-location">
 
-    <time datetime="29/8/2018">Sept. 29, 2018</time>
-    <p>Loremus PageMaker including versions of Lorem Ipsum.
+      <button class="bArticle"><h1>title</h1>
+      <h2>announcement</h2>
+      
+      <time datetime="29/8/2018">Sept. 29, 2018</time></button>
+      <div class="content">
+          <p>
+          </p>
+          </div>
+  </article>
+
+  <article id="2018-pick-order">
+
+      <button class="bArticle"><h1>Official Draft Order 2018 - 2019</h1>
+        <h2>League Announcement</h2>
+    
+        <time datetime="29/8/2018">Sept. 29, 2018</time></button>
+      <div class="content">
+      <p>Loremus PageMaker including versions of Lorem Ipsum.
       <br/> 1. Matt Leis (3)
       <br/> 2. Sunny Varley (1)
       <br/> 3. Geoff Charles (2)
@@ -121,7 +135,25 @@
       <br/> 12. Evan Mann (7)
       <br/>
     </p>
+    </div>
   </article>
+
+  <script>
+    var coll = document.getElementsByClassName("bArticle");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 
 </html>

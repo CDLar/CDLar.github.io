@@ -2,6 +2,35 @@
 
 nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
 
+.bArticle {
+  background-color:white;
+  cursor: pointer;
+  width: 100%;
+  border: 0.1em solid lightgrey;
+  display: grid;
+  text-align:left;
+}
+
+.bArticle:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: grey;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 
 .blog {
 	display:         flex;
