@@ -101,62 +101,93 @@
 
   </header>
 
+  <article id="2018-balance-changes">
+
+    <button class="bArticle">
+      <h1>2018 Balance Changes</h1>
+      <h2>League Announcement</h2>
+
+      <time datetime="13/9/2018">Sept. 13, 2018</time>
+    </button>
+    <div class="content">
+      <p>So after some balance talks with Tim we decided to go ahead with the following balance change:
+        <br/>
+        <br/>
+        <b>+/- (0.5 points) &rArr; +/- (0.2 points)</b>
+        <br/>
+        <br/> The reason for the change was that we both felt that the plus minus stat as a whole was something we wanted to keep
+        in the league but at the same time it felt a little too random, esepcially with forwards ending with negative nights.
+        We decided to lower the impact of +/- to make players fantasy nights a little more consistent across the board.</p>
+
+      <p>
+        We also talked about trying to make goalies more consistent and and make lower end goalies a bit less risky to run out by reducing negative points acrued by goals against (while reducing points earned for wins) but it turned out to be too hard to balance without throwing off the balance of the elite goaltenders. We also didn't want to shake up the balance of the league too much right before the draft so we decided to keep the changes fairly light this year as we were mostly happy with how everything turned out last year.
+      </p>
+    </div>
+  </article>
+
   <article id="2018-draft-location">
 
-      <button class="bArticle"><h1>Official Draft Location 2018 - 2019 </h1>
+    <button class="bArticle">
+      <h1>Official Draft Location 2018 - 2019 </h1>
       <h2>League Announcement</h2>
-      
-      <time datetime="08/9/2018">Sept. 9, 2018</time></button>
-      <div class="content">
-          <p>Saturday September 15th has been officially designated as the Official 2018 - 2019 draft day. The draft itself will be held in Toronto at the following address, 125 western battery rd suite #1704. Buzzer # is 7107.
-         
-          </p>
-          </div>
+
+      <time datetime="08/9/2018">Sept. 9, 2018</time>
+    </button>
+    <div class="content">
+      <p>Saturday September 15th has been officially designated as the Official 2018 - 2019 draft day. The draft itself will
+        be held in Toronto at the following address, 125 western battery rd suite #1704. Buzzer # is 7107.
+
+      </p>
+    </div>
   </article>
 
   <article id="2018-pick-order">
 
-      <button class="bArticle"><h1>Official Draft Order 2018 - 2019</h1>
-        <h2>League Announcement</h2>
-    
-        <time datetime="29/8/2018">Aug. 29, 2018</time></button>
-      <div class="content">
-      <p>Thanks again to KV for doing the annual draft lottery, I've added last year's draft position in brackets next to each name. This year's Basecamp Fantasy Hockey League draft pick order is as follows:<br/>
-      <br/> 1. Matt Leis (3)
-      <br/> 2. Sunny Varley (1)
-      <br/> 3. Geoff Charles (2)
-      <br/> 4. Curtis Larsen (4)
-      <br/> 5. Morgan Pierre (9)
-      <br/> 6. Tim Aaron (6)
-      <br/> 7. Erik Menna (11)
-      <br/> 8. Morgan Noel (12)
-      <br/> 9. Cameron RS (10)
-      <br/> 10. Erik Mitchell (5)
-      <br/> 11. Kyle Varley (8)
-      <br/> 12. Evan Mann (7)
-      <br/>
-      <br/>
-      It's interesting to see that the top four draft picks remain unchanged and that most GMs ended up with a pick position relatively close to last year's. Rik being the only outlier here dropping five positions 5 > 10.
-    </p>
+    <button class="bArticle">
+      <h1>Official Draft Order 2018 - 2019</h1>
+      <h2>League Announcement</h2>
+
+      <time datetime="29/8/2018">Aug. 29, 2018</time>
+    </button>
+    <div class="content">
+      <p>Thanks again to KV for doing the annual draft lottery, I've added last year's draft position in brackets next to each
+        name. This year's Basecamp Fantasy Hockey League draft pick order is as follows:
+        <br/>
+        <br/> 1. Matt Leis (3)
+        <br/> 2. Sunny Varley (1)
+        <br/> 3. Geoff Charles (2)
+        <br/> 4. Curtis Larsen (4)
+        <br/> 5. Morgan Pierre (9)
+        <br/> 6. Tim Aaron (6)
+        <br/> 7. Erik Menna (11)
+        <br/> 8. Morgan Noel (12)
+        <br/> 9. Cameron RS (10)
+        <br/> 10. Erik Mitchell (5)
+        <br/> 11. Kyle Varley (8)
+        <br/> 12. Evan Mann (7)
+        <br/>
+        <br/> It's interesting to see that the top four draft picks remain unchanged and that most GMs ended up with a pick position
+        relatively close to last year's. Rik being the only outlier here dropping five positions 5 > 10.
+      </p>
     </div>
   </article>
 
   <script>
     var coll = document.getElementsByClassName("bArticle");
     var i;
-    
+
     for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
+      coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.maxHeight){
+        if (content.style.maxHeight) {
           content.style.maxHeight = null;
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
-        } 
+        }
       });
     }
-    </script>
+  </script>
 </body>
 
 </html>
