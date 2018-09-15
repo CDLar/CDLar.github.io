@@ -9,6 +9,26 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
   display: inline-block;
 }
 
+#topB {
+  display: none;
+  position: fixed;
+  bottom: 0.1em;
+  left: 0.1em;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  width:2.2em;
+  height:2.2em;
+  background-image:url(https://i.imgur.com/WmP4wew.png);
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bArticle {
   background-color:white;
   cursor: pointer;
@@ -160,23 +180,32 @@ body.hall {
 .video-box {
   margin-top:3em;
   margin-left:18em;
-  background-color: rgba(179, 171, 171, 0.623);
   display: inline-block;
 }
 
 .thumb-box {
   margin-top:3em;
-  margin-right:3em;
-  width: 25%;
+  margin-right:2.5em;
+  width: 28%;
   height: 86%;
-  background-color: rgba(179, 171, 171, 0.623);
-  margin-left: 3em;
+  margin-left: 2.5em;
   display: inline-block;
-  outline: 1px solid red;
+  outline: 0px solid red;
   position: absolute;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
+.thumb-pic {
+width:48%;
+height:15%;
+}
+
+.thumb-pici {
+  width:48%;
+  height:15%;
+opacity:0.4;filter:alpha(opacity=40);
+}
 .playoff-box{
   margin-top: 3.44em;
   max-height: 100%;
