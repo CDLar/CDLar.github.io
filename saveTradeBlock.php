@@ -1,5 +1,5 @@
 <?php
-$myFile = fopen("TradeBlock/tradeBlock.txt", "w");
+$myFile = fopen("tradeBlock.txt", "w");
 $text = $_POST[newText];
 
 fwrite($myFile, $text);

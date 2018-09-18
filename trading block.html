@@ -37,14 +37,14 @@
 
     <div id="myDiv" contenteditable="true" onblur="myFunction()">
 
-        <?php include("myText.txt"); ?>
+        <?php include("tradeBlock.txt"); ?>
 
     </div>
 
     <script>
         function myFunction() {
             var xr = new XMLHttpRequest();
-            var url = "TradeBlock/saveTradeBlock.php";
+            var url = "saveTradeBlock.php";
             var text = document.getElementById("myDiv").innerHTML;
             var vars = "newText=" + text;
 
