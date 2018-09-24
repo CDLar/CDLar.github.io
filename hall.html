@@ -10,6 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
   <link rel="icon" type="image/png" href="NewLogo.png">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   <style>
     article {
@@ -88,7 +92,6 @@
     }
   </style>
 </head>
-</head>
 
 <body class="hall">
 
@@ -111,31 +114,76 @@
     </div>
   </nav>
 
-  <div style="margin-left:3em;margin-top:3rem;color:white;width:42vw; height:200vh;display:inline-block;">
-    <p>
-      <b>
-        <h1>Basecamp Fantasy Champions</h1>
-      </b>
-      <br/>
-      <h3>
-        2011 - DAMIEN FLORIO
-        <br/> 2012 - COLIN BOYER
-        <br/> 2013 - DAMIEN FLORIO
-        <br/> 2014 - KYLE VARLEY
-        <br/> 2015 - KYLE VARLEY
-        <br/> 2016 - KYLE VARLEY
-        <br/> 2017 - TIM SCHEUERMANN
-        <br/> 2018 - EVAN MANN
-        <br/>
-      </h3>
-  </div>
+  <div id="hallSlider" class="carousel slide" data-ride="carousel" data-interval="false">
 
-  <div style="margin-left:1rem;margin-top:15rem;position:fixed;height:25rem;width:20rem;display:inline-block;">
-    <h4 style="border-bottom: 2px solid white;">Hall of Fame</h4>
-    <h5>Kyle Varley...............x3</h5>
-    <h5>Damien Florio..........x2</h5>
-    <h5>Contested....................x1</h5>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#hallSlider" data-slide-to="0" class="active"></li>
+      <li data-target="#hallSlider" data-slide-to="1"></li>
+    </ul>
 
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="margin-left:3em;margin-top:3rem;color:white;width:42vw; height:85vh;display:inline-block;">
+          <p>
+            <b>
+              <h1 style="text-shadow: 2px 2px 8px blue;">Basecamp Fantasy Champions</h1>
+            </b>
+            <br />
+            <h3>
+              2011 - DAMIEN FLORIO
+              <br /> 2012 - COLIN BOYER
+              <br /> 2013 - DAMIEN FLORIO
+              <br /> 2014 - KYLE VARLEY
+              <br /> 2015 - KYLE VARLEY
+              <br /> 2016 - KYLE VARLEY
+              <br /> 2017 - TIM SCHEUERMANN
+              <br /> 2018 - EVAN MANN
+              <br />
+            </h3>
+        </div>
+
+        <div style="margin-left:1rem;margin-top:15rem;position:fixed;height:25rem;width:20rem;display:inline-block;">
+          <h4 style="border-bottom: 2px solid blue;text-shadow: 2px 2px 8px blue;">Hall of Fame</h4>
+          <h5>Kyle Varley...............x3</h5>
+          <h5>Damien Florio..........x2</h5>
+          <h5>Contested....................x1</h5>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div style="margin-left:3em;margin-top:3rem;color:white;width:42vw; height:85vh;display:inline-block;">
+          <p>
+            <b>
+              <h1 style="text-shadow: 2px 2px 8px #FF0000;">Basecamp Henicup Winner</h1>
+            </b>
+            <br />
+            <h3>
+              2011 -
+              <br /> 2012 -
+              <br /> 2013 -
+              <br /> 2014 -
+              <br /> 2015 -
+              <br /> 2016 -
+              <br /> 2017 -
+              <br /> 2018 -
+              <br />
+            </h3>
+        </div>
+
+        <div style="margin-left:1rem;margin-top:15rem;position:fixed;height:25rem;width:20rem;display:inline-block;">
+          <h4 style="border-bottom: 2px solid red;text-shadow: 2px 2px 8px #FF0000;">Hall of Shame</h4>
+          <h5>Kyle Varley...............x3</h5>
+          <h5>Damien Florio..........x2</h5>
+          <h5>Contested....................x1</h5>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-next" href="#hallSlider" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
   </div>
 
 </body>
