@@ -88,6 +88,16 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
   font-style:italic;
 }
 
+.divM{
+font-family:Verdana,sans-serif;
+font-weight:bold;font-variant:small-caps;
+letter-spacing:0.2rem;
+color:#FFFFFF;
+position:absolute;
+font-size:2em;
+font-style:italic;
+}
+
 .divD{
   font-family:Verdana,sans-serif;
   font-weight:bold;font-variant:small-caps;
@@ -133,10 +143,10 @@ body.hall {
   width:100%;
 }
 .matchupsA{
-  background-color:#777777;
+  outline: 1px solid red;
   padding: 1.5em 4em;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .matchupsB{
@@ -151,6 +161,11 @@ body.hall {
   width:35%;
   display: inline-flex;
   text-align: center;
+  transition: transform .2s;
+}
+
+.matchup-boxL:hover {
+  transform: scale(2)
 }
 
 .matchup-boxR {
