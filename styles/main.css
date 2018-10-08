@@ -9,6 +9,13 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
   display: inline-block;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+  }
+  
+.reset {
+  all: unset;
+}
 .mBtn{
   border: none;
   background-color: inherit;
