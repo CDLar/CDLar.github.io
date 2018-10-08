@@ -1,5 +1,8 @@
 /*  //My code// */
 
+html{
+  font-size:18px;
+}
 nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
 .ruleBlock {
   margin-top:1em;
@@ -12,7 +15,7 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
 ::-webkit-scrollbar { 
   display: none; 
   }
-  
+
 .reset {
   all: unset;
 }
@@ -160,6 +163,7 @@ body.hall {
   background-repeat: no-repeat;
   background-size: cover;
   width:100%;
+  font-size:16px;
 }
 .matchupsA{
   outline: 1px solid red;
