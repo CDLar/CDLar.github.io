@@ -349,4 +349,11 @@ cursor:default;
     :root {
       font-size: 14px;
     }
+
+    
+  @media (max-width: 3in) {
+    :root {
+      font-size: 12px;
+    }
   }
+}
