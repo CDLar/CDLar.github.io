@@ -339,3 +339,41 @@ cursor:default;
     color: #fff;
     outline: none;
   }
+
+  @media (max-width: 10in) {
+    :root {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 5in) {
+    :root {
+      font-size: 14px;
+    }
+
+    
+  @media (max-width: 3in) {
+    :root {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 10in) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 5in) {
+  :root {
+    font-size: 14px;
+  }
+
+  
+@media (max-width: 3in) {
+  :root {
+    font-size: 12px;
+  }
+}
+}
