@@ -11,10 +11,12 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" href="styles/W3.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
   <style>
-
-    .progress {height: 0.5rem;}
+    .progress {
+      height: 0.5rem;
+    }
 
     h1 {
       font: 600 3.5rem/1.2 "Oswald";
@@ -38,7 +40,7 @@
 
     h5 {
       font: 500 2.5rem/1.2rem "Oswald";
-      color:#E93B41;
+      color: #E93B41;
       font-variant: small-caps;
       display: inline-flex;
     }
@@ -70,7 +72,8 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="index.html" style="font-size:18px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+        <a href="index.html" style="font-size:18px;color:black;text-decoration:none;" class="w3-bar-item">
+          <b>BCFHL</b>
           Basecamp Fantasy Hockey League</a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
@@ -90,7 +93,8 @@
       <div class="col-lg-1"></div>
       <div class="col-lg-10">
         <h1>team face off</h1>
-        <h2 style="margin-top:-0.2rem;">odds of winning</h2><br />
+        <h2 style="margin-top:-0.2rem;">odds of winning</h2>
+        <br />
       </div>
       <div class="col-lg-1"></div>
     </div>
@@ -104,8 +108,8 @@
         <h5>brawn</h5>
 
         <div class="progress mUP">
-          <div class="progress-bar progress-bar-info progress-bar" role="progressbar" style="width: 99%"></div>
-          <div class="progress-bar progress-bar-danger progress-bar" role="progressbar" style="width: 1%"></div>
+          <div id="m1A" class="progress-bar progress-bar-info progress-bar" role="progressbar" style="width: 99%"></div>
+          <div id='m1B' class="progress-bar progress-bar-danger progress-bar" role="progressbar" style="width: 1%"></div>
         </div>
         <h3>7 votes : 0 votes - Larsen overwhelming favourite</h3>
       </div>
@@ -116,9 +120,9 @@
       <div class="col-lg-1"></div>
 
       <div class="col-lg-10">
-        <h4>Menna</h4>
+        <h4>menna</h4>
         <h2>vs</h2>
-        <h5>Erlandson</h5>
+        <h5>erlandson</h5>
 
         <div class="progress mUP">
           <div class="progress-bar progress-bar-info progress-bar" role="progressbar" style="width: 1%"></div>
@@ -197,8 +201,56 @@
       <div class="col-lg-1"></div>
     </div>
   </div>
+  <iframe id="mSheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQuPeeayaWMltJGnlqsttIzJsZ4gi3bHgClyTcXTZAWtzfWwuWfQGiIZw9NcKE_hpnxYYkifZJM-A_/pubhtml?widget=true&amp;headers=false"
+    style=""></iframe>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+    function mW1() {
+      document.getElementById('m1A').width = #mSheet
+    }
+    function mW2() {
+      document.getElementById('m1B').width = 
+    }
+    function mW3() {
+      document.getElementById('m2A').width = 
+    }
+    function mW4() {
+      document.getElementById('m2B').width = 
+    }
+    function mW5() {
+      document.getElementById('m3A').width = 
+    }
+    function mW6() {
+      document.getElementById('m3B').width = 
+    }
+    function mW7() {
+      document.getElementById('m4A').width = 
+    }
+    function mW8() {
+      document.getElementById('m4B').width = 
+    }
+    function mW9() {
+      document.getElementById('m5A').width = 
+    }
+    function mW10() {
+      document.getElementById('m5B').width = 
+    }
+    function mW11() {
+      document.getElementById('m6A').width = 
+    }
+    function mW12() {
+      document.getElementById('m6B').width = 
+    }
+
+
+
+
+
+
+
+  </script>
 </body>
 
 </html>
