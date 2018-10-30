@@ -16,6 +16,9 @@ nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow
   display: none; 
   }
 
+  .hide {
+    display:none;
+  }
 .reset {
   all: unset;
 }
