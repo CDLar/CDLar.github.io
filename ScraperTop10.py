@@ -3,6 +3,7 @@ from selenium import webdriver
 import time
 import selenium
 import pandas as pd
+import csv
 
 driver = webdriver.Chrome()
 driver.get(f'http://fantasy.espn.com/hockey/players/add?leagueId=43185&seasonId=2019&view=stats&statSplit=last7')
@@ -17,15 +18,20 @@ name_html = nameTable.get_attribute('innerHTML')
 score_html = scoreTable.get_attribute('innerHTML')
 
 
-
-
 dfScore = read_html(score_html)[0]
 dfName = read_html(name_html)[0]
 dfS = pd.DataFrame(dfScore, columns = ['Points'])
 dfN = pd.DataFrame(dfName, columns = ['Skaters'])
 dfF = dfF = pd.concat([dfN,dfS], axis=1, ignore_index = True)
 dfF.columns = ['Skaters', 'Points']
+driver.close()
 
 print(dfF)
 
-driver.close()
+#with open("Top10.txt", "w") as top10:
+    #tW = csv.writer(top10)
+    #for i in range(10):
+       # tW.writerow([dfF(i)])
+
+#top10.close()
+

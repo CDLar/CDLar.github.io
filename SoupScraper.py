@@ -2,10 +2,20 @@
 import requests
 import bs4
 from bs4 import BeautifulSoup
+import csv
 
+with open("blank.txt", "r") as blank:
+    bReader =csv.reader(blank)
+    bList =[]
+    for row in bReader:
+        if len (row) != 0:
+            bList = bList + [row]
 
-req = requests.get('http://fantasy.espn.com/hockey/league/scoreboard?leagueId=43185')
-soup = bs4.BeautifulSoup(req.text, 'lxml')
+blank.close()
 
-Score = soup.find_all('div',class_='ScoreCell__Score')
-print(Score)
+with open("Top10.txt", "w") as top10:
+    tW = csv.writer(top10)
+    for row in bList:
+        tW.writerow([bList[row]])
+
+top10.close()
