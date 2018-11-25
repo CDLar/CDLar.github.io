@@ -2,6 +2,7 @@ from pandas.io.html import read_html
 from selenium import webdriver
 import time
 import selenium
+import csv
 
 
 driver = webdriver.Chrome()
