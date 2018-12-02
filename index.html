@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
   <link rel="icon" type="image/png" href="NewLogo.png">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
   <style>
     article {
@@ -29,6 +32,19 @@
       }
     }
 
+    ul{
+      width:100%;
+    }
+
+    ul li{
+      display:block;
+      text-align:center;
+      text-decoration: none;
+    }
+
+    a{
+        text-decoration: none;
+     }
     h2,
     time,
     p:not(:last-child) {
@@ -93,18 +109,17 @@
       </div>
       <div class="w3-bar w3-white w3-wide w3-padding w3-card navMobile">
         <a href="index.html" style="font-size:16px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
-        Basecamp Fantasy Hockey League</a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right">
-        <ul class="mobileMenu">
-            <li><a href="">Rules</a></li>
-            <li><a href="">Hall of Fame</a></li>
-            <li><a href="">Match-ups</a></li>
-            <li><a href="">Podcast</a></li>
-            <li><a href="">Trading Block</a></li>
-            <li><a href="">Playoffs</a></li>
-        </ul>  
+          Basecamp Fantasy Hockey League</a>
+        <div class="toggle"><i class="fas fa-bars menu" aria-hidden="true"></i>
         </div>
+        <ul class="mobileMenu">
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="hall.html">Hall of Fame</a></li>
+          <li><a href="match-ups.html">Match-ups</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="trading block.html">Trading Block</a></li>
+          <li><a href="playoffs.html">Playoffs</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -1172,6 +1187,13 @@
     </div>
   </article>
 
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.menu').click(function () {
+        $('ul').toggle('active');
+      })
+    })
+  </script>
   <script>
     var coll = document.getElementsByClassName("bArticle");
     var i;
