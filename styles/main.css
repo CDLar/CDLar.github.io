@@ -15,6 +15,7 @@ html{
 .mobileMenu
 {
   list-style-type: none;
+  font-size:14px;
 }
 
 @media all and (max-width: 600px) {
