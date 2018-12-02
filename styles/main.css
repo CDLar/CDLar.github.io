@@ -4,6 +4,19 @@ html{
   font-size:16px;
 }
 
+@media all and (max-width: 600px) {
+
+  .navPC{display:none;}
+  .navMobile{display:block;}
+
+}
+
+@media all and (min-width: 601px) {
+
+  .navPC{display:block;}
+  .navMobile{display:none;}
+
+}
 
 nav {font-family:Verdana,sans-serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
 .ruleBlock {
