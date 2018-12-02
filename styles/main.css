@@ -82,7 +82,9 @@ and (max-width:1060px){
 
 }
 
-nav {font-family:Verdana,sans-serif;font-size:16px;line-height:1.5}html{overflow-x:hidden}
+nav {font-family:Verdana,sans-serif;font-size:16px;line-height:1.5}
+html{overflow-x:hidden}
+
 .ruleBlock {
   margin-top:1em;
   color:white;
