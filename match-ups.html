@@ -223,7 +223,13 @@
   <iframe id="mSheet" style="display:none;width:100%;height:70vh;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQuPeeayaWMltJGnlqsttIzJsZ4gi3bHgClyTcXTZAWtzfWwuWfQGiIZw9NcKE_hpnxYYkifZJM-A_/pubhtml?widget=true&amp;headers=false"></iframe>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.menu').click(function () {
+        $('ul').toggle('active');
+      })
+    })
+  </script>
 </body>
 
 </html>

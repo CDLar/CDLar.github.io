@@ -7,7 +7,6 @@ html{
 .toggle{
   display:block;
   width:100%;
-  outline:red 1px solid;
   height:1.4rem;
 }
 
@@ -25,7 +24,7 @@ html{
 .mobileMenu
 {
   list-style-type: none;
-  font-size:14px;
+  font-size:12px;
   width:100%;
 }
 
@@ -44,6 +43,7 @@ html{
       display:block;
       text-align:center;
       text-decoration: none;
+      padding:10px;
     }
 
 @media all and (min-width:600px)
