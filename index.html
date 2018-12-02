@@ -32,17 +32,6 @@
       }
     }
 
-    ul{
-      width:100%;
-      display:none;
-    }
-
-    ul li{
-      display:block;
-      text-align:center;
-      text-decoration: none;
-    }
-
     a{
         text-decoration: none;
      }
@@ -92,26 +81,39 @@
 <!-- Page content -->
 
 <body>
-  <nav style="font-size:16px">
+  <nav>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-wide w3-padding w3-card navPC">
-        <a href="index.html" style="font-size:18px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
-          Basecamp Fantasy Hockey League</a>
-        <!-- Float links to the right. Hide them on small screens -->
+        <div class="pcL">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+            Basecamp Fantasy Hockey League</a>
+        </div>
+        <div class="pcS">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+          </a>
+        </div>
         <div class="w3-right">
-          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1.1em">Rules</a>
-          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1.1em">Hall of Fame</a>
-          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1.1em">Match-ups</a>
-          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1.1em">Podcast</a>
-          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1.1em">Trading Block</a>
-          <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1.1em">Playoffs</a>
+          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1rem">Rules</a>
+          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1rem">Hall of Fame</a>
+          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1rem">Match-ups</a>
+          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1rem">Podcast</a>
+          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1rem">Trading Block</a>
+          <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1rem">Playoffs</a>
         </div>
       </div>
       <div class="w3-bar w3-white w3-wide w3-padding w3-card navMobile">
-        <a href="index.html" style="font-size:14px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
-          Basecamp Fantasy Hockey League</a>
-        <div class="toggle"><i class="fas fa-bars menu" aria-hidden="true"></i>
+        <div class="titleL">
+          <div class="toggle"><a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item">
+              <b>BCFHL</b>
+              Basecamp Fantasy Hockey League</a><i class="fas fa-bars menu" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="titleS" style="width:100%;">
+          <div class="toggle"><a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item">
+              <b>BCFHL</b>
+            </a><i class="fas fa-bars menu" aria-hidden="true"></i>
+          </div>
         </div>
         <ul class="mobileMenu">
           <li><a href="rules.html">Rules</a></li>
