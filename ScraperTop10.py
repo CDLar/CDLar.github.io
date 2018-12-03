@@ -27,7 +27,7 @@ dfF.columns = ['Skaters', 'Points']
 driver.close()
 
 print(dfF)
-print('1. ', dfF.loc[0,:],' - GP: ) - Team')
+
 
 #with open("Top10.txt", "w") as top10:
     #tW = csv.writer(top10)
