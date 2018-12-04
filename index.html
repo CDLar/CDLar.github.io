@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
   <link rel="icon" type="image/png" href="NewLogo.png">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
   <style>
     article {
@@ -28,6 +32,9 @@
       }
     }
 
+    a{
+        text-decoration: none;
+     }
     h2,
     time,
     p:not(:last-child) {
@@ -68,39 +75,54 @@
     }
 
     /*a {box-shadow: inset 0 -0.25em black;}*/
-
-    @media (max-width: 10in) {
-      :root {
-        font-size: 16px;
-      }
-    }
-
-    @media (max-width: 5in) {
-      :root {
-        font-size: 14px;
-      }
-    }
   </style>
 </head>
 
 <!-- Page content -->
 
 <body>
-  <nav style="font-size:16px;">
+  <nav>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="index.html" style="font-size:18px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
-          Basecamp Fantasy Hockey League</a>
-        <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1.1em">Rules</a>
-          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1.1em">Hall of Fame</a>
-          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1.1em">Match-ups</a>
-          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1.1em">Podcast</a>
-          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1.1em">Trading Block</a>
-          <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1.1em">Playoffs</a>
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card navPC">
+        <div class="pcL">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+            Basecamp Fantasy Hockey League</a>
         </div>
+        <div class="pcS">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+          </a>
+        </div>
+        <div class="w3-right">
+          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1rem">Rules</a>
+          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1rem">Hall of Fame</a>
+          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1rem">Match-ups</a>
+          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1rem">Podcast</a>
+          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1rem">Trading Block</a>
+          <a href="playoffs.html" class="w3-bar-item w3-button" style="font-size:1rem">Playoffs</a>
+        </div>
+      </div>
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card navMobile">
+        <div class="titleL">
+          <div class="toggle"><a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item">
+              <b>BCFHL</b>
+              Basecamp Fantasy Hockey League</a><i class="fas fa-bars menu" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="titleS" style="width:100%;">
+          <div class="toggle"><a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item">
+              <b>BCFHL</b>
+            </a><i class="fas fa-bars menu" aria-hidden="true"></i>
+          </div>
+        </div>
+        <ul class="mobileMenu">
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="hall.html">Hall of Fame</a></li>
+          <li><a href="match-ups.html">Match-ups</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="trading block.html">Trading Block</a></li>
+          <li><a href="playoffs.html">Playoffs</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -112,6 +134,216 @@
 
 
   <!-- Articles Start -->
+  <article id="WUW9">
+
+    <button class="bArticle">
+      <h1>Week Nine Fantasy Wrap-up</h1>
+      <h2>Wrap-up</h2>
+
+      <time datetime="03/12/2018">Dec. 3, 2018</time>
+    </button>
+    <div class="content">
+      <p>
+        <br />
+        <h4>
+          Weekly top 10<br />
+        </h4>
+        <h3>
+          1. Mikko Koskinen (Edm G - 31.6 fpts - GP: 3) - Team Snyder (5)
+        </h3>
+        Seeing Koskinen up here has to be a nightmare for team Sunny, Talbot was one of the most utilized starters in
+        the NHL but he seems to be almost completely side-lined now in favor of Koskinen. Maybe this is the break Team
+        Le Fevre needs to regain some of his lost momentum because this pick-up has looked amazing for him so far and
+        could be one of the best of the season if he holds on to his starting job.
+        <h3><br />
+          2. Mark Scheifele (Wpg C - 31.0 fpts - GP: 3) - Team Le Fevre (8)
+        </h3>
+        The top Winnipeg line looked great this week and Schiefele was potting goals everywhere and coming up clutch in
+        a lot of the games the Jets faced this week. Cam getting him in the bottom of the 5th has seemed like a great
+        bargain so far.
+        <h3><br />
+          3. Nicklas Backstrom (Wsh C - 30.2 fpts - GP: 4) - Team Brawn (4)
+        </h3>
+        Top line, 1PP on a team known for blowing teams up both when playing at even strength and when on the
+        power-play. What's not to love?
+        <h3><br />
+          4. Nathan MacKinnon (Col C - 29.2 - GP: 3) - Team Menna (6)
+        </h3>
+        Just another week for MacKinnon, he's looked sick this year and the main powerhouse behind team Menna.
+        <h3><br />
+          5. Frederik Anderson (Tor G - 26.6 fpts - GP: 3) - Team KV (8)
+        </h3>
+        Matthews is back which naturally bodes well for someone who benefits directly from the overall strength of the
+        Toronto club. Additionally, with Nylander finally be signed and back on the roster line combinations might
+        finally be solidified, which one would assume leads to more wins for Anderson down the road.
+        <h3><br />
+          6. Jonathan Huberdeau (Fla LW - 26.4 fpts - GP: 3) - Team Leis (5)
+        </h3>
+        Somebody has to fill the void created by the absence of Trocheck. The only problem is that secondary scoring
+        lines in Florida are going to be left a lot weaker and the top lines are going to be facing stronger shut-down
+        pressure from opposing defenders.
+        <h3><br />
+          7. Semyon Varlamov (Col G - 23.6 fpts - GP: 3) - Team Erlandson (11)
+        </h3>
+        Much to my annoyance Varlamov is still performing great for the Avalanche and while Grubauer does appear to be
+        putting up some pretty good nights Varlamov shouldn't be under too much threat if he keeps playing the way he
+        is. He's one of the top fantasy goal-tenders who came from a very late draft position, similar to Hutton who is
+        also
+        on team Erlandson.
+        <h3><br />
+          8. Oscar Klefbom (Edm D - 25.4 fpts - GP: 3) - Team Snyder (7)
+        </h3>
+        Klefbom is one of those guys, just like anyone playing in proximity of McDavid, who has a lot of fantasy value
+        on paper. It doesn't hurt that Klefbom shots the puck a ton for a defender. In the past he hasn't really been
+        able to shine given the opporunity but there may be a tipping point where he eventually realizes some of that
+        value.
+        <h3><br />
+          9. Brent Burns (SJ D - 23.8 fpts - GP: 4) - Team Le Fevre (9)
+        </h3>
+        Burnsy making another appearance albeit a bit lower down the list this time. He's been rock-solid for Morgo all
+        season and he's one of the few stand-out players on a slumping Team Le Fevre.
+        <h3><br />
+          10. Nikolaj Ehlers (Wpg LW - 23.8 fpts - GP: 4) - Team Menna (7)
+        </h3>
+        Menna doubling up on Top10 entries this week. Despite looking very unimpressive for most of the season Menna is
+        finally rewarded when Ehlers comes through with a hat-trick. It just goes to show you how important 1PP is as
+        his linemates Scheifele and Wheeler have so much more value.
+        <h4><br />
+          GM Spotlight<br />
+        </h4>
+        <h3>Who's hot: Team Scheuermann - <i>Points For leader</i> (6-3-0)</h3>
+        It's the second time team Scheuermann has made the Who's Hot section and for good reason. Points For is always
+        going to be one of the best indicators of fantasy success and Tim has a lot of them to go around, he also
+        currently holds the title for the most Top10 player awards (13). As it stands right now 12 of Tim's players are
+        sporting a fantasy average of 4 FTPS or more per game and that kind of high level consistency is really hard to
+        go up against in the regular season. He might still be down Bergeron and Raanta for a while longer but the recent addition
+        of McElhinney as Carolina's new starter seems to be panning out great for him as a source of new fantasy value.
+        <br /><br />
+        <h3>Who's not: Team Sunny - <i>Sliding record</i> (4-5-0)</h3>
+        Sunny's team started out red-hot with the leafs looking unstoppable but when Matthews was knocked out of the
+        line-up for a while it definitely left his team a little vulnerable. Sunny's record has been tanking a bit in
+        the last few weeks
+        and he now finds himself at a sub-500 winrate after last week's loss to Varley Jr. Matthews is back now so hopefully he can look to get his record
+        on track but another big problem has arisen on the senior Varley team in the shape of Cam Talbot. Sunny used up
+        an early round draft pick to grab Talbot expecting him to be the primary workhorse for the Oilers 2018-2019
+        season but it's looking more and more apparent that he has lost the crease
+        to Koskinen.
+      </p>
+    </div>
+  </article>
+
+  <article id="WUW8">
+
+    <button class="bArticle">
+      <h1>Week Eight Fantasy Wrap-up</h1>
+      <h2>Wrap-up</h2>
+
+      <time datetime="19/11/2018">Nov. 19, 2018</time>
+    </button>
+    <div class="content">
+      <p>
+
+        <br />
+        <h4>
+          Weekly top 10<br />
+        </h4>
+        <h3>
+          1. Patrik Laine (Wpg RW - 51.8 fpts - GP: 4) - Team Leis (4)
+        </h3>
+        No player had even broken 40 points in a week yet when Laine comes in and smashes that with an 11 goal, double
+        hat trick, 52
+        point fantasy week. It's actually insane both in the fantasy world and in the real NHL for someone to
+        score 5 goals in a single game, even moreso when you consider this kid is only 20 years old.
+        Also Laine and Mau can both eat a dick.
+        <h3><br />
+          2. Marc-Andre Fleury (Vgs G - 34.3 fpts - GP: 3) - Team Sunny (7)
+        </h3>
+        It's been a while since Sunny has made Top 10 ever since what happened to Matthews. MAF is still putting up
+        solid efforts
+        since leaving the Pens and as long as the Vegas offense keeps up the wins should keep coming for him.
+        <h3><br />
+          3. Braden Holtby (Wsh G - 28.8 fpts - GP: 3) - Team Buckley (4)
+        </h3>
+        Holtby has looked lights out since returning, turning away almost 100 shots in his last three games. The
+        Caps offense is hot and Holtby is a fantasy stud whenever he takes the crease during these win streaks.
+        <h3><br />
+          4. Jake Guentzel (Pit LW - 28.0 fpts GP: 4) - Team Le Fevre (7)
+        </h3>
+        Morgo has earned himself another spot on the Top 10 working his way up to a respectable count of 7 with
+        Guentzel hitting the board at the #2 position. Guentzel isn't exactly a fantasy powerhouse but the sheer
+        offensive capability means that anyone playing on the Pens has a chance at these big weeks.
+        <h3><br />
+          5. Louis Domingue (TB G - 27.8 fpts - GP: 3) - Team Sunny (8)
+        </h3>
+        Sunny racking up another point with another goalie. Since Vasi has been out with a broken foot Domingue has
+        been holding it down for Tampa. Obviously not a fantasy asset that will last but Sunny has to be happy with the
+        performance he's getting out of him in the short-term.
+        <h3><br />
+          6. Max Pacioretty (Vgs LW -26.8 fpts - GP: 3) - Team Erlandson (10)
+        </h3>
+        Pacioretty finally showing some signs of life in Vegas, in prior years on the Canadiens Patches had been a
+        pretty consistent
+        goal-scorer and fantasy asset, his current day production however is much more bleak. We'll see if Patches can
+        still turn the season around, this week is a start anyways.
+        <h3><br />
+          7. Nikita Kucherov (TB RW - 25.6 fpts - GP: 4) - Team Brawn (3)
+        </h3>
+        While the Stamkos/Nikita line hasn't been as dominant in past seasons you still can't feel too bad about the
+        pace his been on this season. He's well over a point-per-game and performing better than Stamkos overall. Not
+        much else to say, he's deadly on the offense and there's a good reason he went in the first round.
+        <h3><br />
+          8. John Carlson (Wsh D - 25 fpts - GP: 4) - Team Scheuermann (13)
+        </h3>
+        Carlson has continued to look unbelievable, it makes me wonder if he might even surpass the likes of fantasy
+        greats like Karlsson/Burns/Hedman going into next years draft. Either way, Carlson continues to look amazing
+        after a great 2017-2018 campaign.
+        <h3><br />
+          8. Pekka Rinne (Nsh G - 25 fpts - GP: 4) - Team Menna (5)
+        </h3>
+        We have a tie for 8th place with Pekka Rinne coming in for Menna. It's no secret that a lot of Rinne's value
+        stems from
+        the amount of starts that Nashville heaps onto him. This week is just an example of Rinne's insane stamina, I
+        don't think any other goalies in the leauge are counted on to make four consecutive starts in a single week.
+        Rinne ended up walking away with three wins and earning a nice chunk of fantasy points for his efforts.
+        <h3><br />
+          10. Alex Ovechkin (Wsh RW/LW - 24.8 fpts - GP: 4) - Team Larsen (5)
+        </h3>
+        He shoots hard, hits hard and parties hard. His off-season celebration bender didn't seem to slow him down as
+        he's currently holding down third place for goals scored and has been an extremely consistent fantasy producer.
+        Ovie hits almost as much as he shoots and no other player even comes close to reaching those auxillary point
+        thresholds. Ovechkin is scheduled to slow down at some point but it seems like this is not the year.
+        <h4><br />
+          GM Spotlight<br />
+        </h4>
+        <h3>Who's hot: Team Buckley - <i>East division leader</i> (6-2-0)</h3>
+        I was a bit apprehensive of Team Buckley's record earlier in the season but after 8 weeks he's
+        still sitting on top of the East Division and on top of that he hands formerly undefeated team Mann his first
+        loss of the season. I think now is when you really got to start looking at Tweak's team as a more serious
+        contender, there are definitely some guys on the lower end of his roster than should be axed but there are
+        undeniably strong pieces like Crosby, Holtby, Hall and Skinner who are pulling a ton of weight. Holtby is an
+        amazing 1G to have
+        but I think if Rittich steals the #1 spot on Calgary Tweak's goalie core might be in trouble.
+        <br /><br />
+        <h3>Who's not: Team Le Fevre - <i>Four loss streak </i> (3-5-0)</h3>
+        Kind of going the opposite way of team Buckley, team Le Fevre was a team I gave a positive review of previously
+        on the GM Spotlight
+        that I now need to backtrack a little on. Whether it's due to trades not panning out in his favor or bad puck
+        luck Team Le Fevre
+        has just not been finding a lot of success lately. Granted he has been facing tough opposition, finding himself
+        pummeled by
+        200+ weeks of opposing clubs, there are still a few issues. Goal-tending woes is definitely one of the bigger
+        ones,
+        Morgo's crease is in shambles with Murray and Lehner have looking like more of a liability than a source of
+        fantasy points in recent weeks. And now to make matters worse
+        shortly after trading for Murray from KV he is side-lined with a "longer-term" lower body injury. His forward
+        core
+        hasn't looked terrible but it's going to need more to overcome the huge deficit that is his current
+        goalie core.
+        </h3>
+      </p>
+    </div>
+  </article>
+
   <article id="WUW7">
 
     <button class="bArticle">
@@ -448,7 +680,7 @@
           7. Team Erlandson - 2 of 6 Correct (7/12 - 58%)
         </h5>
         <br />
-        <b>Non-Voters:</b> Leis, Synder, Buckley, Menna, Brawn
+        <b>Non-Voters:</b> Leis, Snyder, Buckley, Menna, Brawn
         <br />
         <b>Pivotal upsets:</b> Sunny Vs. Buckley, Scheurmann Vs. Morgo, Snyder Vs. Leis
         <br />
@@ -511,7 +743,7 @@
         great for Mann. As long as he keeps playing with MacKinnon he should keep producing at a good rate.
 
         <h3><br />
-          6. Mark Scheifele (Wpg C - 25 fpts - GP: 4) - Team Synder (1)
+          6. Mark Scheifele (Wpg C - 25 fpts - GP: 4) - Team Snyder (1)
         </h3>
         Another new GM on the top 10 as Cam makes his first appearance. Scheifele enjoyed an easy schedule last week
         playing four games against teams that tend to let a lot
@@ -584,7 +816,7 @@
           NA. Team Sunny - Disqualified for voting late (9/12 - 75%)
         </h5>
         <br />
-        <b>Non-Voters:</b> Leis, Synder, Buckley, Menna, Brawn, KV
+        <b>Non-Voters:</b> Leis, Snyder, Buckley, Menna, Brawn, KV
         <br />
         <b>Pivotal upsets:</b> None
         <br />
@@ -756,10 +988,10 @@
           5. Team Mann - 3 of 6 Correct (50%)
         </h5>
         <br />
-        <b>Non-Voters:</b> Leis, Synder, Buckley, Menna, Brawn
+        <b>Non-Voters:</b> Leis, Snyder, Buckley, Menna, Brawn
 
         <br />
-        <b>Pivotal Match-ups:</b> Erlandson Vs Larsen, Scheurmann Vs. Mann, KV Vs. Synder
+        <b>Pivotal Match-ups:</b> Erlandson Vs Larsen, Scheurmann Vs. Mann, KV Vs. Snyder
         <br />
         <br />
         <a href="https://goo.gl/forms/41zQptfRXR8ZbFwh2"> - Vote for Week 5 -</a>
@@ -961,7 +1193,7 @@
         deal on Gaudreau. As far as goalies go I think Gibson makes up for most of the shortcomings of his weaker 2nd
         and 3rd goalies. I'm not really sold on all of his D choices but it's still early in the year.
         <br />
-        <h3>Who's not: Team Synder</h3>
+        <h3>Who's not: Team Snyder</h3>
         Traditionally speaking Cam has always managed a middle of the pack team that usually goes through highs and
         lows throughout the season. Recently however he has come under fire for his draft strategy and despite picking
         up the 'W' his team had a poor first showing. Additionally, a string of early injuries to his core roster
@@ -1056,6 +1288,13 @@
     </div>
   </article>
 
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.menu').click(function () {
+        $('ul').toggle('active');
+      })
+    })
+  </script>
   <script>
     var coll = document.getElementsByClassName("bArticle");
     var i;

@@ -10,357 +10,397 @@
   <link rel="icon" type="image/png" href="NewLogo.png">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <!-- Page content -->
 
 <body class="playoffs">
 
-  <nav style="font-size:16px;">
+  <nav>
     <!-- Navbar (sit on top) -->
-    <div class= "w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="index.html" style="font-size:18px;color:black;text-decoration:none;" class="w3-bar-item">          <b>BCFHL</b> Basecamp Fantasy Hockey League</a>
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card navPC">
+        <div class="pcL">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+            Basecamp Fantasy Hockey League</a>
+        </div>
+        <div class="pcS">
+          <a href="index.html" style="color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+          </a>
+        </div>
         <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1.1em">Rules</a>
-          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1.1em">Hall of Fame</a>
-          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1.1em">Match-ups</a>
-          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1.1em">Podcast</a>
-          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1.1em">Trading Block</a>
-          <a href="playoffs.html" class="w3-bar-item w3-button w3-bottombar" style="font-size:1.1em">Playoffs</a>
+        <div class="w3-right">
+          <a href="rules.html" class="w3-bar-item w3-button" style="font-size:1rem">Rules</a>
+          <a href="hall.html" class="w3-bar-item w3-button" style="font-size:1rem">Hall of Fame</a>
+          <a href="match-ups.html" class="w3-bar-item w3-button" style="font-size:1rem">Match-ups</a>
+          <a href="podcast.html" class="w3-bar-item w3-button" style="font-size:1rem">Podcast</a>
+          <a href="trading block.html" class="w3-bar-item w3-button" style="font-size:1rem">Trading Block</a>
+          <a href="playoffs.html" class="w3-bar-item w3-button w3-bottombar" style="font-size:1rem">Playoffs</a>
+        </div>
+      </div>
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card navMobile">
+        <div class="titleL">
+          <a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+            Basecamp Fantasy Hockey League</a>
+        </div>
+        <div class="titleS">
+          <a href="index.html" style="font-size:12px;color:black;text-decoration:none;" class="w3-bar-item"> <b>BCFHL</b>
+          </a>
+        </div>
+        <div class="toggle"><i class="fas fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <div>
+          <ul class="mobileMenu">
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="hall.html">Hall of Fame</a></li>
+            <li><a href="match-ups.html">Match-ups</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="trading block.html">Trading Block</a></li>
+            <li><a href="playoffs.html">Playoffs</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </nav>
+    </nav>
 
-  <!-- Tree selector buttons -->
-  <button id="FinalB" class="buttonP" onclick="treeSwitchF()" autofocus style="top:93%; left:39.5%">Champion</button>
-  <button id="HenicupB" class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
-  <button id="GauntletB" class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button>
+    <!-- Tree selector buttons -->
+    <button id="FinalB" class="buttonP" onclick="treeSwitchF()" autofocus style="top:93%; left:39.5%">Champion</button>
+    <button id="HenicupB" class="buttonP" onclick="treeSwitchH()" style="top:93%; left:47.25%">Henicup</button>
+    <button id="GauntletB" class="buttonP" onclick="treeSwitchG()" style="top:93%; left:54%">Gauntlet</button>
 
-  <div id="Finals">
+    <div id="Finals">
 
-    <!-- Bracket titles-->
-    <p class="divH" style="margin-left:3.5em;margin-top:2em">west quarter</p>
-    <p class="divD" style="margin-left:7.5em;margin-top:5.5em">3/12 - 3/18</p>
+      <!-- Bracket titles-->
+      <p class="divH" style="margin-left:3.5em;margin-top:2em">west quarter</p>
+      <p class="divD" style="margin-left:7.5em;margin-top:5.5em">3/12 - 3/18</p>
 
-    <p class="divH" style="margin-left:20em;margin-top:2em">west semi</p>
-    <p class="divD" style="margin-left:29.25em;margin-top:5.5em">3/19 - 3/25</p>
+      <p class="divH" style="margin-left:20em;margin-top:2em">west semi</p>
+      <p class="divD" style="margin-left:29.25em;margin-top:5.5em">3/19 - 3/25</p>
 
-    <p class="divH" style="margin-left:33.5em;margin-top:2em">championship</p>
-    <p class="divD" style="margin-left:50.5em;margin-top:5.5em">3/26 - 4/01</p>
+      <p class="divH" style="margin-left:33.5em;margin-top:2em">championship</p>
+      <p class="divD" style="margin-left:50.5em;margin-top:5.5em">3/26 - 4/01</p>
 
-    <p class="divH" style="margin-left:50em;margin-top:2em">east semi</p>
-    <p class="divD" style="margin-left:71.75em;margin-top:5.5em">3/19 - 3/25</p>
+      <p class="divH" style="margin-left:50em;margin-top:2em">east semi</p>
+      <p class="divD" style="margin-left:71.75em;margin-top:5.5em">3/19 - 3/25</p>
 
-    <p class="divH" style="margin-left:64.25em;margin-top:2em">east quarter</p>
-    <p class="divD" style="margin-left:93.75em;margin-top:5.5em">3/12 - 3/18</p>
+      <p class="divH" style="margin-left:64.25em;margin-top:2em">east quarter</p>
+      <p class="divD" style="margin-left:93.75em;margin-top:5.5em">3/12 - 3/18</p>
 
-    <!-- Bracket Lines-->
+      <!-- Bracket Lines-->
 
-    <!-- WestQF-->
-    <div class="hLine" style="width:1.5em;margin-left:20.1em;margin-top:10.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="hLine" style="width:1.5em;margin-left:20.1em;margin-top:15.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="vLine" style="height:2.57em;margin-left:21.6em;margin-top:10.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="vLine" style="height:2.57em;margin-left:21.6em;margin-top:13.37em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="hLine" style="width:1.28em;margin-left:21.73em;margin-top:13.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <!-- WestQF-->
+      <div class="hLine" style="width:1.5em;margin-left:20.1em;margin-top:10.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:1.5em;margin-left:20.1em;margin-top:15.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="vLine" style="height:2.57em;margin-left:21.6em;margin-top:10.8em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="vLine" style="height:2.57em;margin-left:21.6em;margin-top:13.37em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:1.28em;margin-left:21.73em;margin-top:13.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
 
-    <div class="hLine" style="width:2.9em;margin-left:20.1em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:2.9em;margin-left:20.1em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
 
-    <!-- WestSF-->
-    <div class="hLine" style="width:1em;margin-left:41.17em;margin-top:13.4em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="hLine" style="width:1em;margin-left:41.17em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="vLine" style="height:10.50em;margin-left:42.17em;margin-top:13.40em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="vLine" style="height:10.55em;margin-left:42.17em;margin-top:23.9em;opacity:0.4;filter:alpha(opacity=40);"></div>
-    <div class="hLine" style="width:0.7em;margin-left:42.3em;margin-top:19.2em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <!-- WestSF-->
+      <div class="hLine" style="width:1em;margin-left:41.17em;margin-top:13.4em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:1em;margin-left:41.17em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="vLine" style="height:10.50em;margin-left:42.17em;margin-top:13.40em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="vLine" style="height:10.55em;margin-left:42.17em;margin-top:23.9em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:0.7em;margin-left:42.3em;margin-top:19.2em;opacity:0.4;filter:alpha(opacity=40);"></div>
 
-    <!-- EastSF-->
+      <!-- EastSF-->
 
-    <!-- WestQF-->
+      <!-- WestQF-->
 
 
-    <div class="hLine" style="width:2.7em;margin-left:81.15em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
+      <div class="hLine" style="width:2.7em;margin-left:81.15em;margin-top:34.3em;opacity:0.4;filter:alpha(opacity=40);"></div>
 
-    <!-- West Quarterfinals -->
-    <div class="playoff-box" style="min-width:15em;max-width:23em;">
-      <table class="PT" style="margin-top:6em; margin-left:2em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #4</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
+      <!-- West Quarterfinals -->
+      <div class="playoff-box" style="min-width:15em;max-width:23em;">
+        <table class="PT" style="margin-top:6em; margin-left:2em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #4</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
 
-      <table class="PT" style="margin-top:2em; margin-left:2em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">WC #1</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
+        <table class="PT" style="margin-top:2em; margin-left:2em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">WC #1</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
 
-      <table class="PT" style="margin-top:15.6em;margin-left:2em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #1</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
+        <table class="PT" style="margin-top:15.6em;margin-left:2em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #1</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
 
-      <!--table class="PT" style="margin-top:2em; margin-left:2em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table-->
-    </div>
-
-    <!-- West Semi-Finals -->
-    <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40);">
-      <table class="PT" style="margin-top:8.50em; margin-left:23em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">WQF Winner</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:18.00em; margin-left:23em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #1</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-
-    <!-- Finals Bracket -->
-    <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40)" ;>
-      <table class="PT" style="margin-top:14.500em; margin-left:43em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">West Finalist</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:6.00em; margin-left:43em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">East Finalist</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-
-    <!-- East Semi-Finals -->
-    <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40);">
-      <table class="PT" style="margin-top:8.50em; margin-left:63em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">EQF Winner</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:18.00em; margin-left:63em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #2</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-
-    <!-- East Quarterfinals -->
-    <div class="playoff-box">
-      <table class="PT" style="margin-top:6em; margin-left:83.75em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #3</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:2em; margin-left:83.75em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">WC #2</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:15.6em;margin-left:83.75em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">Seed #2</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <!--table class="PT" style="margin-top:2em; margin-left:83.75em;">
+        <!--table class="PT" style="margin-top:2em; margin-left:2em;">
         <tr>
           <th class="PT-P">P</th>
           <th class="PT-N">NAME</th>
           <th class="PT-S">S</th>
         </tr>
       </table-->
-    </div>
-  </div>
-
-  <div id="Henicup" style="display:none">
-
-    <!-- West Semis -->
-    <div class="playoff-box">
-
-      <table class="PT" style="margin-top:6em; margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:22.5em; margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-    <!-- East Semis -->
-    <div class="playoff-box">
-
-      <table class="PT" style="margin-top:6em; margin-left:81em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:22.5em; margin-left:81em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-  </div>
-
-  <div id="Gauntlet" style="display:none">
-
-    <!-- Qualifying rounds -->
-    <div class="playoff-box">
-
-      <table class="PT" style="margin-top:6em; margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:4em; margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:11em;margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:4em; margin-left:3em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-
-    <!-- Wildcard Advancement-->
-    <div class="playoff-box">
-      <table class="PT" style="margin-top:9.5em; margin-left:30em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-
-      <table class="PT" style="margin-top:18em; margin-left:30em;">
-        <tr>
-          <th class="PT-P">P</th>
-          <th class="PT-N">NAME</th>
-          <th class="PT-S">S</th>
-        </tr>
-      </table>
-    </div>
-
-    <!-- Advancement Text -->
-    <div class="playoff-box">
-
-      <div style="margin-top:9.5em; margin-left:56em;font-weight:bold;">
-        <p class="divH" style="font-size:2em;color:white;">Advance as Wildcard 1 (WC1) ➠</p>
       </div>
-      <div style="margin-top:18em; margin-left:56em;font-weight:bold;">
-        <p style="font-size:2em;color:black;">Advance as Wildcard 2 (WC2) ➠</p>
+
+      <!-- West Semi-Finals -->
+      <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40);">
+        <table class="PT" style="margin-top:8.50em; margin-left:23em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">WQF Winner</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:18.00em; margin-left:23em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #1</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Finals Bracket -->
+      <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40)" ;>
+        <table class="PT" style="margin-top:14.500em; margin-left:43em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">West Finalist</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:6.00em; margin-left:43em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">East Finalist</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- East Semi-Finals -->
+      <div class="playoff-box" style="opacity:0.4;filter:alpha(opacity=40);">
+        <table class="PT" style="margin-top:8.50em; margin-left:63em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">EQF Winner</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:18.00em; margin-left:63em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #2</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- East Quarterfinals -->
+      <div class="playoff-box">
+        <table class="PT" style="margin-top:6em; margin-left:83.75em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #3</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:2em; margin-left:83.75em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">WC #2</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:15.6em;margin-left:83.75em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">Seed #2</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <!--table class="PT" style="margin-top:2em; margin-left:83.75em;">
+        <tr>
+          <th class="PT-P">P</th>
+          <th class="PT-N">NAME</th>
+          <th class="PT-S">S</th>
+        </tr>
+      </table-->
       </div>
     </div>
-  </div>
 
-  <!-- Function to switch playoff brackets-->
-  <script>
-    function treeSwitchF() {
-      document.getElementById("Finals").style.display = "block";
-      document.getElementById("Henicup").style.display = "none";
-      document.getElementById("Gauntlet").style.display = "none";
-      document.getElementByID("FinalB").style.color = "#fff";
-      document.getElementByID("HenicupB").style.color = "#06426c";
-      document.getElementByID("GauntletB").style.color = "#06426c";
-    }
-  </script>
+    <div id="Henicup" style="display:none">
 
-  <script>
-    function treeSwitchH() {
-      document.getElementById("Finals").style.display = "none";
-      document.getElementById("Henicup").style.display = "block";
-      document.getElementById("Gauntlet").style.display = "none";
-      document.getElementByID("FinalB").style.color = "#06426c";
-      document.getElementByID("HenicupB").style.color = "white";
-      document.getElementByID("GauntletB").style.color = "#06426c";
-    }
-  </script>
+      <!-- West Semis -->
+      <div class="playoff-box">
 
-  <script>
-    function treeSwitchG() {
-      document.getElementById("Finals").style.display = "none";
-      document.getElementById("Henicup").style.display = "none";
-      document.getElementById("Gauntlet").style.display = "block";
-      document.getElementByID("FinalB").style.color = "#06426c";
-      document.getElementByID("HenicupB").style.color = "#06426c";
-      document.getElementByID("GauntletB").style.color = "white";
-    }
-  </script>
-  <!--BootStrap-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        <table class="PT" style="margin-top:6em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:22.5em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+      <!-- East Semis -->
+      <div class="playoff-box">
+
+        <table class="PT" style="margin-top:6em; margin-left:81em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:22.5em; margin-left:81em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="Gauntlet" style="display:none">
+
+      <!-- Qualifying rounds -->
+      <div class="playoff-box">
+
+        <table class="PT" style="margin-top:6em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:4em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:11em;margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:4em; margin-left:3em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Wildcard Advancement-->
+      <div class="playoff-box">
+        <table class="PT" style="margin-top:9.5em; margin-left:30em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+
+        <table class="PT" style="margin-top:18em; margin-left:30em;">
+          <tr>
+            <th class="PT-P">P</th>
+            <th class="PT-N">NAME</th>
+            <th class="PT-S">S</th>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Advancement Text -->
+      <div class="playoff-box">
+
+        <div style="margin-top:9.5em; margin-left:56em;font-weight:bold;">
+          <p class="divH" style="font-size:2em;color:white;">Advance as Wildcard 1 (WC1) ➠</p>
+        </div>
+        <div style="margin-top:18em; margin-left:56em;font-weight:bold;">
+          <p style="font-size:2em;color:black;">Advance as Wildcard 2 (WC2) ➠</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.menu').click(function () {
+          $('ul').toggle('active');
+        })
+      })
+    </script>
+    
+    <!-- Function to switch playoff brackets-->
+    <script>
+      function treeSwitchF() {
+        document.getElementById("Finals").style.display = "block";
+        document.getElementById("Henicup").style.display = "none";
+        document.getElementById("Gauntlet").style.display = "none";
+        document.getElementByID("FinalB").style.color = "#fff";
+        document.getElementByID("HenicupB").style.color = "#06426c";
+        document.getElementByID("GauntletB").style.color = "#06426c";
+      }
+    </script>
+
+    <script>
+      function treeSwitchH() {
+        document.getElementById("Finals").style.display = "none";
+        document.getElementById("Henicup").style.display = "block";
+        document.getElementById("Gauntlet").style.display = "none";
+        document.getElementByID("FinalB").style.color = "#06426c";
+        document.getElementByID("HenicupB").style.color = "white";
+        document.getElementByID("GauntletB").style.color = "#06426c";
+      }
+    </script>
+
+    <script>
+      function treeSwitchG() {
+        document.getElementById("Finals").style.display = "none";
+        document.getElementById("Henicup").style.display = "none";
+        document.getElementById("Gauntlet").style.display = "block";
+        document.getElementByID("FinalB").style.color = "#06426c";
+        document.getElementByID("HenicupB").style.color = "#06426c";
+        document.getElementByID("GauntletB").style.color = "white";
+      }
+    </script>
+    <!--BootStrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
