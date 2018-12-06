@@ -173,15 +173,15 @@ html{overflow-x:hidden}
 .hLine{
   background-color:white;
   height:0.13em;
-  position:absolute;
   z-index:1000000;
+  display:absolute
 }
 
 .vLine{
   background-color:white;
   width:0.13em;
-  position:absolute;
   z-index:1000000;
+  display:absolute
 }
 
 .divH{
@@ -228,7 +228,7 @@ display:inline-block;
   position:relative;
 }
 
-.PT  {border-collapse:collapse;border-spacing:0;height:3em;}
+.PT  {border-collapse:collapse;border-spacing:0;height:3em;margin-left:auto;margin-right:auto}
 .PT td{font-family:Arial, sans-serif;font-size:1em;padding:0.625x 0.313em;border-style:solid;border-width:0.063em;overflow:hidden;word-break:normal;border-color:black;}
 .PT th{font-family:Arial, sans-serif;font-size:1em;font-weight:normal;padding:0.625 0.313em;border-style:solid;border-width:0.12em;overflow:hidden;word-break:normal;border-color:black;}
 .PT .PT-P{background-color:#656565;color:#ffffff;border-color:#ffffff;text-align: center;width:2em;}
@@ -338,11 +338,10 @@ cursor:default;
 
 }
 .playoff-box{
-  margin-top: 3.44em;
+  margin-top: 3em;
   max-height: 100%;
   overflow: hidden;
   display:block;
-  outline: red solid 1px
 }
 
 .playoffB{
