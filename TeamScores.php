@@ -11,14 +11,14 @@
 
 print"Hello";
 
-#$connection=mysqli_connect("server187.web-hosting.com
-#","bcfhckzf","Osiris321","bcfhckzf_MatchUps")
+$connection=mysqli_connect("server187.web-hosting.com
+","bcfhckzf","Osiris321","bcfhckzf_MatchUps")
 
-#if ($connection) {
-#    echo "Connection established! <br>";
-#} else  
-#    die("COnnection failed. Reason: ".mysqli_connect_error());
-#}
+if ($connection) {
+    echo "Connection established! <br>";
+} else  
+    die("COnnection failed. Reason: ".mysqli_connect_error());
+}
 
 ?>
 
