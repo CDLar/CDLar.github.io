@@ -7,7 +7,7 @@ import csv
 
 driver = webdriver.Chrome()
 driver.get('http://fantasy.espn.com/hockey/league/scoreboard?leagueId=43185')
-time.sleep(5)
+time.sleep(7)
 s1 = driver.find_element_by_css_selector('#espn-analytics > div > div.jsx-813185768.shell-container > div.page-container.cf > div.layout.is-full > div > div > div.jsx-653569304.scoreboard.pt4 > div:nth-child(2) > section > div > div > div.jsx-710992233.Scoreboard__Column.Scoreboard__Column--1.ph4.mv4 > div > ul > li.ScoreboardScoreCell__Item.flex.items-center.relative.pb2.ScoreboardScoreCell__Item--away > div.ScoreCell__Score.h4.clr-gray-01.fw-heavy.tar.ScoreCell_Score--scoreboard.pl2').text
 s2 = driver.find_element_by_css_selector('#espn-analytics > div > div.jsx-813185768.shell-container > div.page-container.cf > div.layout.is-full > div > div > div.jsx-653569304.scoreboard.pt4 > div:nth-child(2) > section > div > div > div.jsx-710992233.Scoreboard__Column.Scoreboard__Column--1.ph4.mv4 > div > ul > li.ScoreboardScoreCell__Item.flex.items-center.relative.pb2.ScoreboardScoreCell__Item--home > div.ScoreCell__Score.h4.clr-gray-01.fw-heavy.tar.ScoreCell_Score--scoreboard.pl2').text
 s3 = driver.find_element_by_css_selector('#espn-analytics > div > div.jsx-813185768.shell-container > div.page-container.cf > div.layout.is-full > div > div > div.jsx-653569304.scoreboard.pt4 > div:nth-child(3) > section > div.Scoreboard__RowContainer.flex.flex-column.flex-auto > div > div.jsx-710992233.Scoreboard__Column.Scoreboard__Column--1.ph4.mv4 > div > ul > li.ScoreboardScoreCell__Item.flex.items-center.relative.pb2.ScoreboardScoreCell__Item--away > div.ScoreCell__Score.h4.clr-gray-01.fw-heavy.tar.ScoreCell_Score--scoreboard.pl2').text
