@@ -43,10 +43,11 @@ GdfF.columns = ['Goalies', 'Points']
 
 
 driver.close()
-
-print(dfF)
-print(GdfF)
-
+t10 = dfF.append(GdfF, ignore_index=false)
+ 
+print(dfF[:10])
+print(GdfF[:10])
+print(t10)
 
 #with open("Top10.txt", "w") as top10:
     #tW = csv.writer(top10)
