@@ -41,18 +41,36 @@ GdfN = pd.DataFrame(GdfName, columns = ['Goalies'])
 GdfF = GdfF = pd.concat([GdfN,GdfS], axis=1, ignore_index = True)
 GdfF.columns = ['Goalies', 'Points']
 
-
 driver.close()
-t10 = dfF.append(GdfF, ignore_index=false)
- 
+
+#Creating the Skater Dataframe with extended columns
+fSkaters = pd.DataFrame(columns=['Name','Team','Position','FntPts'])
+fSkaters['Name'] = dfF.Skaters.str[:-4]
+fSkaters['Team'] = dfF.Skaters.str[-4:-1]
+fSkaters['Position'] = dfF.Skaters.str[-1]
+fSkaters['FntPts'] = dfF['Points']
+
+#Changing the Fantasy Points column data type to float
+fSkaters.replace('--','0',inplace=True)
+fSkaters['FntPts'] = pd.to_numeric(fSkaters['FntPts'])
+
+
+#Creating the Goalie Dataframe with extended columns
+fGoalies = pd.DataFrame(columns=['Name','Team','Position','FntPts'])
+fGoalies['Name'] = GdfF.Goalies.str[:-4]
+fGoalies['Team'] = GdfF.Goalies.str[-4:-1]
+fGoalies['Position'] = GdfF.Goalies.str[-1]
+fGoalies['FntPts'] = GdfF['Points']
+
+#Changing the Fantasy Points column data type to float
+fGoalies.replace('--','0',inplace=True)
+fGoalies['FntPts'] = pd.to_numeric(fGoalies['FntPts'])
+
+#Merging the two extended Dataframes together then sort and reindex
+fJoint = pd.concat([fSkaters,fGoalies])
+fJoint.sort_values(by=['FntPts'],ascending=False,inplace=True)
+fJoint.reset_index(drop=True, inplace=True)
+
 print(dfF[:10])
 print(GdfF[:10])
-print(t10)
-
-#with open("Top10.txt", "w") as top10:
-    #tW = csv.writer(top10)
-    #for i in range(10):
-       # tW.writerow([dfF(i)])
-
-#top10.close()
-
+print (fJoint[:10])
