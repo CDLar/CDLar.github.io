@@ -50,6 +50,9 @@ fSkaters['Team'] = dfF.Skaters.str[-4:-1]
 fSkaters['Position'] = dfF.Skaters.str[-1]
 fSkaters['FntPts'] = dfF['Points']
 
+#Checking for 2 letter team names
+for x in fSkaters
+
 #Changing the Fantasy Points column data type to float
 fSkaters.replace('--','0',inplace=True)
 fSkaters['FntPts'] = pd.to_numeric(fSkaters['FntPts'])
@@ -71,6 +74,5 @@ fJoint = pd.concat([fSkaters,fGoalies])
 fJoint.sort_values(by=['FntPts'],ascending=False,inplace=True)
 fJoint.reset_index(drop=True, inplace=True)
 
-print(dfF[:10])
-print(GdfF[:10])
+print(fJoint)
 print (fJoint[:10])
