@@ -6,7 +6,7 @@ import pandas as pd
 import csv
 
 driver = webdriver.Chrome()
-driver.get(f'http://fantasy.espn.com/hockey/players/add?leagueId=43185&seasonId=2019&view=stats&statSplit=last7')
+driver.get(f'http://fantasy.espn.com/hockey/players/add?leagueId=43185&seasonId=2019&view=stats&statSplit=last15')
 time.sleep(5)
 driver.find_element_by_xpath('//*[@id="filterStatus"]/option[5]').click()
 time.sleep(5)
@@ -51,10 +51,10 @@ fSkaters['Position'] = dfF.Skaters.str[-1]
 fSkaters['FntPts'] = dfF['Points']
 
 #Checking for 2 letter team names
-for x in dfF:
-    if x[-4].islower():
-        fSkaters.at[x,'Name'] = dfF.skaters.str[:-3]
-        fSkaters.at[x,'Team'] = dfF.skaters.str[-3:-1]
+#for x in dfF:
+    #if dfF.iloc[x,1].str.islower():
+       # fSkaters.at[x,'Name'] = dfF.skaters.str[:-3]
+        #fSkaters.at[x,'Team'] = dfF.skaters.str[-3:-1]
 
 #Changing the Fantasy Points column data type to float
 fSkaters.replace('--','0',inplace=True)
@@ -77,5 +77,8 @@ fJoint = pd.concat([fSkaters,fGoalies])
 fJoint.sort_values(by=['FntPts'],ascending=False,inplace=True)
 fJoint.reset_index(drop=True, inplace=True)
 
-print(fJoint)
 print (fJoint[:10])
+
+for index, row in fJoint.iterrows():
+    x = index+1
+    print(x,'. ', row['Name'],' (', row['Team'],' ',row['Position'],' - ',row['FntPts'],' fpts) - Team  ()',sep='')
