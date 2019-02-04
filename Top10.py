@@ -51,7 +51,10 @@ fSkaters['Position'] = dfF.Skaters.str[-1]
 fSkaters['FntPts'] = dfF['Points']
 
 #Checking for 2 letter team names
-for x in fSkaters
+for x in dfF:
+    if x[-4].islower():
+        fSkaters.at[x,'Name'] = dfF.skaters.str[:-3]
+        fSkaters.at[x,'Team'] = dfF.skaters.str[-3:-1]
 
 #Changing the Fantasy Points column data type to float
 fSkaters.replace('--','0',inplace=True)
