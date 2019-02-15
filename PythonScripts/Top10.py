@@ -77,8 +77,6 @@ fJoint = pd.concat([fSkaters,fGoalies])
 fJoint.sort_values(by=['FntPts'],ascending=False,inplace=True)
 fJoint.reset_index(drop=True, inplace=True)
 
-print (fJoint[:10])
-
 for index, row in fJoint.iterrows():
     x = index+1
     print(x,'. ', row['Name'],' (', row['Team'],' ',row['Position'],' - ',row['FntPts'],' fpts) - Team  ()',sep='')
