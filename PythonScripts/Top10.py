@@ -6,7 +6,7 @@ import pandas as pd
 import csv
 
 driver = webdriver.Chrome()
-driver.get(f'http://fantasy.espn.com/hockey/players/add?leagueId=43185&seasonId=2019&view=stats&statSplit=last15')
+driver.get(f'http://fantasy.espn.com/hockey/players/add?leagueId=43185&seasonId=2019&view=stats&statSplit=last7')
 time.sleep(5)
 driver.find_element_by_xpath('//*[@id="filterStatus"]/option[5]').click()
 time.sleep(5)
@@ -76,8 +76,6 @@ fGoalies['FntPts'] = pd.to_numeric(fGoalies['FntPts'])
 fJoint = pd.concat([fSkaters,fGoalies])
 fJoint.sort_values(by=['FntPts'],ascending=False,inplace=True)
 fJoint.reset_index(drop=True, inplace=True)
-
-print (fJoint[:10])
 
 for index, row in fJoint.iterrows():
     x = index+1
