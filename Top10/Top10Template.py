@@ -19,11 +19,9 @@ data = pd.read_csv('2019-week1.csv')
 newData = data.drop(['Rk','Opponent', 'FP/G', '% Owned', '+/-'], axis=1)
 newData['Gp'] = data['FPts'].divide(data['FP/G'], fill_value=1) 
 newData['Gp'] = newData['Gp'].round(0)
-newData = newData.drop(newData.index[16:], inplace=True)
-newData.Gp = newData.Gp.astype(int)
+topData = newData.drop(newData.index[10:])
 
-print(newData)
-
-for index, row in newData.iterrows():
+for index, row in topData.iterrows():
     x = index+1
-    print(x,'. ', row['Player'],' (', row['Team'],' ',row['Position'],' - ',row['FPts'],' fpts - ','GP: ',row['Gp'], ') - Team  ()',sep='')
+    print(x,'. ', row['Player'],' (', row['Team'],' ',row['Position'],' - ',row['FPts'],' fpts - ','GP: ',row['Gp'], ') - Team ()',sep='')
+
