@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 
-data = pd.read_csv('2019-week1.csv')
+data = pd.read_csv("../test.csv")
 
 newData = data.drop(['Rk','Opponent', 'FP/G', '% Owned', '+/-'], axis=1)
 newData['Gp'] = data['FPts'].divide(data['FP/G'], fill_value=1) 
