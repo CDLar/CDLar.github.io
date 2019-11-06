@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 
-data = pd.read_csv('C:\\Users\\Curtis\\OneDrive\\Documents\\GitHub\\BCFHL\\Top10\\2019-week3.csv')
+data = pd.read_csv('C:\\Users\\Curtis\\OneDrive\\Documents\\GitHub\\BCFHL\\Top10\\2019-week4.csv')
 #data = pd.read_csv('/test.csv')
 
 newData = data.drop(['Rk','Opponent', 'FP/G', '% Owned', '+/-'], axis=1)
